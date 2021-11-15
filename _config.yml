@@ -9,8 +9,8 @@ heading_anchors: true
 markdown: kramdown
 
 aux_links:
-  "View on github":
-    - "//github.com/June-Skeeter/Module3_GEOS270/"
+  "Course Syllabus":
+    - "https://june-skeeter.github.io/GEOS270W1/"
 
 # license information for content
 license_name: "Creative Commons Attribution 4.0 International License"
