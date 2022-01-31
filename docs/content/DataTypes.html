@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css">
   <!-- see https://cdnjs.com/libraries/reveal.js/3.6.0 for what's available -->
   <!-- examples: simple, beige, black, blood, league, moon, night, serif, sky, solarized, white ... -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/sky.css" id="theme">
   <!-- see: https://cdnjs.com/libraries/highlight.js/ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css">
 
@@ -78,6 +78,85 @@
   <div class="reveal">
 
     <div class="slides">
+
+       <section>
+        <h2>Digital Information</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+          <p>In a computer, information is represented as bits (0's and 1's).  We typically quantify data as bytes (8 bits):  There are numerous ways to translate human readable data to binary, such as ASCII:</p>
+          <ul>  
+            <li>Kilobyte (kB) = 1,000 bytes</li>
+            <li>Megabyte (MB) = 1,000,000 bytes</li>
+            <li>Gigabyte (GB) = 1,000,000,000 bytes</li>
+          </ul>
+         </div>
+      </section>
+
+      <section>
+        <h2>Digital Information</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+          <p>There are numerous ways to translate human readable data to binary, such as ASCII, where each character is represented as one byte.  There are 2<sup>8</sup>(256) possible unique combinations of 0's and 1's in a byte.</p>
+          <ul>  
+            <li>"A" : 01000001</li>
+            <li>"CAT": 01000011 01000001 01010100</li>
+            <li>"31": 00110011 00110001</li>
+          </ul>
+         </div>
+      </section>
+
+
+       <section>
+        <h2>Digital Information</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+          <p>Modern computers use 64-bit "architecture".  That is, the central processing unit (CPU) can handle 64 bits (8 bytes) of information at a time.</p>
+          <ul> 
+            <li>"Word" Length is 64 bits</li>
+            <li>2<sup>64</sup> (>18 quintillion) possible unique values</li>
+            <li>CPUs can be stacked in parallel to handle more information at one time</li>
+          </ul>
+           </div>
+      </section>
+
+       <section>
+        <h2>Representing Spatial Phenomena</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+          <p>Within the context of a GIS, every piece of information describing a phenomenon is referred to as an <b>Attribute</b>.  Broadly speaking each attribute can address one of three questions:</p>
+          <ul>  
+            <li><b>Where?</b></li>
+            <li><b>What?</b></li>
+            <li><b>When?</b></li>
+          </ul>
+           </div>
+      </section>
+
+
+       <section>
+        <h2>Types of Attributes</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+            <ul>  
+              <li><b>Spatial Data</b>: Attributes that describe where.</li>
+              <li><b>Non-Spatial Data</b>: Attributes that describe what or when.</li>
+            </ul>
+           </div>
+      </section>
+
+       <section>
+        <h2>Attributes</h2>
+        <div class="container">
+          <div class="col" style="text-align: left  ;">
+          <p>Attributes that describe where are known as Spatial Data while all other attributes are Non-Spatial Data. All data, spatial and non-spatial, can broadly be classified as either qualitative or quantitative. These data types fundamentally different and are therefore measured on fundamentally different scales. The types of analysis we can conduct with qualitative data are more limited than quantitative data, but that does not necessarily mean quantitative data are “better” than qualitative.</p>
+          <ul>  
+            <li>What?</li>
+            <li>When?</li>
+            <li>Where?</li>
+          </ul>
+           </div>
+      </section>
+
 
        <section>
         <h2>Qualitative Data</h2>

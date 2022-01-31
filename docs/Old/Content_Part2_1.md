@@ -2,7 +2,7 @@
 layout: default
 title: Types of Phenomena
 parent: Phenomena and Data Types
-grand_parent: Lecture Content
+grand_parent: Content
 nav_order: 1
 ---
 

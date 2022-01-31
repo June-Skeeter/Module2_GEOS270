@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Application
+title: Lab Application
 has_children: True
 nav_order: 3
 ---

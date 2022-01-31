@@ -1,19 +1,28 @@
 ---
 layout: default
 title: Phenomena and Data Types
-parent: Lecture Content
+parent: Content
 has_children: True
 nav_order: 2
 ---
 
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
-# A Bit About Data
+# Which spatial data model is best?
 
-A key consideration is the **Type of Phenomenon** being represented.
+No single data model is suitable for all types of data or analysis.  Many times you will use both raster and vector data in the same analysis.  There is not a "best" model.  Vector data is better for some situations, raster data is better for others.  The type of data model use to represent something is dependent on a number of factors.  A key consideration is the **Type of Phenomenon** being represented.
 
 
-<!-- 
+
+---
 
 # Assessment Questions
 
@@ -47,4 +56,4 @@ Polygons in a vector dataset can be single part or multipart [T/F].
 
 ### WC1
 
-Briefly discuss what resolution means with regards to raster and vector data.   -->
+Briefly discuss what resolution means with regards to raster and vector data.  

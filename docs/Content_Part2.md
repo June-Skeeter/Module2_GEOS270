@@ -1,13 +1,12 @@
 ---
 layout: default
-title: Phenomena and Data Types
+title: Spatial Data Models
 parent: Content
 has_children: True
 nav_order: 2
 ---
 
-
-<details open markdown="block">
+<!-- <details open markdown="block">
   <summary>
     Table of contents
   </summary>
@@ -15,45 +14,38 @@ nav_order: 2
 1. TOC
 {:toc}
 </details>
+ -->
+# Spatial is Special
 
-# Which spatial data model is best?
+You might encounter the phrase "Spatial is special" in your time studying GIS.  Spatial data is the foundation of Geographic Information Science, it is what distinguishes GIS from the broader field of data science.  This was succinctly summarized by Waldo Tobler in **The First Law of Geography**:
 
-No single data model is suitable for all types of data or analysis.  Many times you will use both raster and vector data in the same analysis.  There is not a "best" model.  Vector data is better for some situations, raster data is better for others.  The type of data model use to represent something is dependent on a number of factors.  A key consideration is the **Type of Phenomenon** being represented.
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="content/Toblers_Law.html" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="content/Toblers_Law.html" target="_blank">View Image in New Tab</a>
 
 
-
+<!-- 
 ---
 
 # Assessment Questions
 
-### QC3
+### QC1
 
-______ objects have well defined boundaries.  They are countable, meaning there is only a ______ number of them.
+The ______ data model represents space as a continuous grid of ______ which each contain a single ______.
 
-### QC4
+### QC2
 
-______ fields lack well defined boundaries.  Because of this, they can be measured at an ______ number of locations.
+The ______ data model represents features in space as discrete two-dimensional ______ , one-dimensional ______ , and/or "zero-dimensional"  points.  Attribute information is stored separately in a ______.
 
-### QC5
-
-Both types of phenomena can be represented using either the raster or vector data model.  However, ______ phenomena are generally better represented by the vector model and ______ phenomena are better represented by the raster data model.
-
-### QC6
-
-Higher resolution rasters have smaller cells which means they take less memory to store [T/F]
-
-### QC7 
-
-The ______ problem pertains to how we assign data values to grid cells that cover more than one value.
-
-### QC8
-
-Resolution is a property of the [data/map/both], scale is a property of the [data/map/both].
-
-### QC9
-
-Polygons in a vector dataset can be single part or multipart [T/F].
-
-### WC1
-
-Briefly discuss what resolution means with regards to raster and vector data.  
+ -->

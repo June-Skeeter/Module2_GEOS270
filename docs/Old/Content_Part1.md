@@ -1,12 +1,19 @@
 ---
 layout: default
-title: Spatial is Special
-parent: Phenomena and Data Types
-grand_parent: Lecture Content
+title: Data Models
+parent: Content
 has_children: True
-nav_order: 3
+nav_order: 1
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 # Spatial is Special
 
@@ -29,7 +36,6 @@ You might encounter the phrase "Spatial is special" in your time studying GIS.  
 
 
 
-<!-- 
 ---
 
 # Assessment Questions
@@ -42,4 +48,3 @@ The ______ data model represents space as a continuous grid of ______ which each
 
 The ______ data model represents features in space as discrete two-dimensional ______ , one-dimensional ______ , and/or "zero-dimensional"  points.  Attribute information is stored separately in a ______.
 
- -->

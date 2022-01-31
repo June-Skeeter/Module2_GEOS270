@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Module 3
+title: Module 2
 nav_order: 1
 ---
 
-# Spatial Data Models
+# Spatial Data Models & Spatial Data Collection
 
 We use data models represent phenomena in a GIS.  A data model is just a simplified abstractions of reality.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Tnd1emcyI_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Tnd1emcyI_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ## Learning Outcomes
 

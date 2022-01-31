@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Raster Data
-parent: Spatial Data Models
-grand_parent: Lecture Content
+parent: Data Models
+grand_parent: Content
 nav_order: 1
 ---
-<!-- 
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -14,7 +14,7 @@ nav_order: 1
 1. TOC
 {:toc}
 </details>
- -->
+
 
 # Raster Data
 
@@ -47,7 +47,7 @@ Other file types you will likely encounter when working with raster data include
 * 1) IMG - A proprietary image format commonly used by ESRI products
 * 2) JPEG2000 - A geospatial version of the common .jpg image type
 * 3) ASCII - An older human readable format (simple text file) with slower performance than the types listed above.
-<!-- 
+
 ---
 
 # Assessment Questions
@@ -58,4 +58,3 @@ The ______ data model represents space as a continuous grid of ______ which each
 
 
 
- -->

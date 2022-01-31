@@ -2,16 +2,25 @@
 layout: default
 title: Types of Data
 parent: Phenomena and Data Types
-grand_parent: Lecture Content
+grand_parent: Content
 nav_order: 2
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 # Types of Data
-<!-- 
+
 Within the context of a Geographic Information System, each piece of information pertaining to a phenomena can be referred to as an **Attribute**.  An phenomena can have many different attributes associated with it, but each attribute can broadly be said to address one of three questions: **What**, **When**, or **Where**?
 
 Attributes that describe *where* are known as **Spatial Data** while all other attributes are **Non-Spatial Data**.  All data, spatial and non-spatial, can broadly be classified as either **qualitative** or **quantitative**.  These data types fundamentally different and are therefore measured on fundamentally different scales. The types of analysis we can conduct with qualitative data are more limited than quantitative data, but that does not necessarily mean quantitative data are “better” than qualitative.
- -->
+
 <div style="overflow: hidden;
   padding-top: 56.25%;
   position: relative">

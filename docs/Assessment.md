@@ -5,14 +5,49 @@ nav_order: 4
 ---
 
 # Assessment
-{: .no_toc }
 
-You can use the course Canvas page to complete the quiz, written submission, and files uploads.  I suggest you download write down your answers as you progress through the Content and Application sections then upload your answers to canvas once you have finished the module.
+You can use the submit your answers to the Assessment via the Module 1 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the module if you need help finding answers.  If you would like a .pdf version of the instructions, you can it download it [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/Assessment.pdf).
 
-1. TOC
-{:toc}
+
+## Written Answers & File Uploads
+
+Written answers should be brief but they should adequately answer the question.  Bullet point format is sufficient unless otherwise specified.  All written answers & maps will be evaluated following this general rubrics below.
+
+* Scores & categories are general guides, you TA may assign scores between these levels
+* Your TA will provide brief comments where applicable, if you need more feedback you can follow up with your TA.
+
+**Written Answer Rubric**
+
+|Score|      Category      |                             Details                              |
+|-----|--------------------|------------------------------------------------------------------|
+|0%   |Missing             |N/A                                                               |
+|40%  |Insufficient        |Minimal effort, missing major key points, or serious logical flaws|
+|60%  |Below Expectations  |Missing a few key points or minor logical flaws                   |
+|80%  |Met Expectations    |Hits key points and mostly well constructed                       |
+|100% |Exceeds Expectations|Clearly thought out, concise, and astute                          |
+
+**Map Rubric**
+
+|Score|      Category      |                             Details                               |
+|-----|--------------------|-------------------------------------------------------------------|
+|0%   |Missing             |N/A                                                                |
+|40%  |Insufficient        |Serious errors in analysis, missing data, or major stylistic issues|
+|60%  |Below Expectations  |Minor errors in analysis or multiple stylistic issues              |
+|80%  |Met Expectations    |Error free analysis, minor stylistic issue                         |
+|100% |Exceeds Expectations|Error free analysis and clean, aesthetically pleasing map          |
+
 
 ---
+
+# Lecture Content Questions 
+
+
+
+
+
+# Lab Application Questions 
+
+<!-- 
 
 # Module Quiz
 
@@ -134,16 +169,4 @@ Export your Layout as a .pdf and upload it to Canvas.
 [**WC1**](Content_Part2.md#wc1)
 Briefly discuss what resolution means with regards to raster and vector data.  
 
----
-
-# Rubric 
-
-All written answers and file submissions will be scored using this generic rubric.  Your TA will provide brief comments where applicable.  For more feedback you can follow up with your TA.
-
-|Score|Comments            |
-|-----|--------------------|
-| 0%  |Missing             |
-| 25% |Insufficient        |
-| 50% |Below Expectations  |
-| 75% |Met Expectations    |
-| 100%|Exceeds Expectations|
+ -->

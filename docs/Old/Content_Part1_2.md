@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Vector Data
-parent: Spatial Data Models
-grand_parent: Lecture Content
+parent: Data Models
+grand_parent: Content
 nav_order: 2
 ---
-<!-- 
+
 <details open markdown="block">
   <summary>
     Table of contents
@@ -14,7 +14,7 @@ nav_order: 2
 1. TOC
 {:toc}
 </details>
- -->
+
 
 # Vector Data
 
@@ -105,7 +105,7 @@ Because the structure of points, lines, and polygons are different, each individ
 |CENTRAL SAANICH VEYANESS|BRITISH COLUMBIA|   1011467|                     48.58|                    -123.42|
 
 
-<!-- 
+
 
 ---
 
@@ -113,4 +113,4 @@ Because the structure of points, lines, and polygons are different, each individ
 
 ### QC2
 
-The ______ data model represents features in space as discrete two-dimensional ______ , one-dimensional ______ , and/or "zero-dimensional"  points.  Attribute information is stored separately in a ______. -->
+The ______ data model represents features in space as discrete two-dimensional ______ , one-dimensional ______ , and/or "zero-dimensional"  points.  Attribute information is stored separately in a ______.
