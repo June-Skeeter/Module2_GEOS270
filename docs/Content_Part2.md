@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Spatial Data Models
-parent: Content
+parent: Lecture Content
 has_children: True
 nav_order: 2
 ---
@@ -15,9 +15,13 @@ nav_order: 2
 {:toc}
 </details>
  -->
-# Spatial is Special
+# Spatial Data Models
 
-You might encounter the phrase "Spatial is special" in your time studying GIS.  Spatial data is the foundation of Geographic Information Science, it is what distinguishes GIS from the broader field of data science.  This was succinctly summarized by Waldo Tobler in **The First Law of Geography**:
+
+<img src="content/images/03-vector-v-raster.jpg" width="900">
+
+
+<!-- You might encounter the phrase "Spatial is special" in your time studying GIS.  Spatial data is the foundation of Geographic Information Science, it is what distinguishes GIS from the broader field of data science.  This was succinctly summarized by Waldo Tobler in **The First Law of Geography**:
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
@@ -34,7 +38,7 @@ You might encounter the phrase "Spatial is special" in your time studying GIS.  
 </div>
 <a href="content/Toblers_Law.html" target="_blank">View Image in New Tab</a>
 
-
+ -->
 <!-- 
 ---
 

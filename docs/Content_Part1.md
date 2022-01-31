@@ -3,7 +3,7 @@ layout: default
 title: Phenomena and Data Types
 parent: Lecture Content
 has_children: True
-nav_order: 2
+nav_order: 1
 ---
 
 

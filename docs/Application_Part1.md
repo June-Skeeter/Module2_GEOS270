@@ -1,22 +1,25 @@
 ---
 layout: default
-title: Vector Data
-parent: Application
-nav_order: 1
+title: Set Up
+parent: Lab Application
+nav_order: 2
 ---
 
-# Vector Data
+# Set Up Your GeoDatabase
 
-## Setting up your GeoDatabase
+By default, ArcPro creates a geodatabase when you start a new project.  Recall from Module 1: A geodatabase (.gdb) is a file management structure that is unique to ESRI products.  They are used to store files in Arc Pro. You don't have to store your data in a .gdb, Arc Pro can work with data stored in regular folders as well, but they have some enhanced functionality that makes them better in some circumstances.  One helpful thing we can do in a .gdb, is create a feature dataset to store our census data.
 
-By default, ArcPro creates a geodatabase when you start a new project.  We're going to create a Feature Dataset within this geodatabase and add the census data to it.  Feature Datasets are collections of Feature Classes that are all in the same coordinate system.  Data that comes from Stats Canada is by default in the Lambert Conformal Conic Projection.  We're going to use a Universal Transverse Mercator projection instead since we are working with a small area (Vancouver).
+**Feature Datasets** are collections of **Feature Classes** that are all in the same coordinate system.  When you add a data to a feature dataset, it will *automatically* be projected into the coordinate system we specify.  This can help us avoid making mistakes like working with data that is in the wrong coordinate system!  We are going to use a Universal Transverse Mercator projection  (UTM Zone 10N) since we are working with a small area (Vancouver).  You can reference the video to see how to create one.
 
-**1**{: .label .label-red } Create the CensusData Feature Dataset and import the census layers.  You can reference the video below if you need a refresher.
-* Set the Coordinate System to NAD 1983 UTM Zone 10N
-	* NAD 1983 is the name of the datum (North American Datum 1983)
-	* UTM Zone 10N is the name of the projection (Universal Transverse Mercator, Zone 10 N)
-	 * You can set this coordinate system to your favorites by right clicking and selecting add to favorites.  This will make it easier to find in the future!
-* Add Van_DA_2016.shp and and VanCMS_CT_2016.shp from the Van_Census.zip file you downloaded.
+**1**{: .label .label-red } Create the an new Feature Dataset named **CensusData** Feature Dataset 
+
+**2**{: .label .label-red } Set the Coordinate System to NAD 1983 UTM Zone 10N
+
+* NAD 1983 is the name of the datum (North American Datum 1983)
+* UTM Zone 10N is the name of the projection (Universal Transverse Mercator, Zone 10 N)
+ * You can set this coordinate system to your favorites by right clicking and selecting add to favorites.  This will make it easier to find in the future!
+
+**3**{: .label .label-red } Add **Van_DA_2016.shp** and **VanCMS_CT_2016.shp** from the Van_Census folder you downloaded.
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
@@ -35,14 +38,17 @@ By default, ArcPro creates a geodatabase when you start a new project.  We're go
 
 
 ## Create the Project Boundary File
-We need to create a simple boundary file to upload to Google Earth Engine so we can download satellite for the study area.  We can do this quickly using the dissolve tool.
+We need to create a simple boundary file to upload to Google Earth Engine so we can download satellite for our study area.  We can do this quickly using the dissolve tool.
 
-**2**{: .label .label-red } Use the Dissolve tool to create the boundary file.
-* In the Geoprocessing pane, find the Dissolve tool.
-* Set VanCMA_CT_2016 as the input
-* **Note** Geoprocessing results are by default saved to your Van_NDVI.gdb, but files in .gdb are saved in a format that can't be read by Google Earth Engine.
-	* Instead, save the Output one leve up in your Van_NDVI project folder and name it Boundary.
-* Remove this layer from your table of contents.  We don't need it in this map project.	
+**1**{: .label .label-red } In the Geoprocessing pane, find the Dissolve tool.
+
+**2**{: .label .label-red } Set VanCMA_CT_2016 as the input
+
+* **Note**: Geoprocessing results are by default saved to your Van_NDVI.gdb, but files in .gdb are saved in a format that can't be read by Google Earth Engine.
+* *Instead*: save the Output one level up in your Van_NDVI project folder and name it **Boundary**.
+
+
+**3**{: .label .label-red } Remove this layer from your table of contents.  We don't need it in this map project.	
 
 <div style="overflow: hidden;
   padding-top: 56.25%;

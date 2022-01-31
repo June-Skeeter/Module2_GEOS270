@@ -4,7 +4,7 @@ title: Module 2
 nav_order: 1
 ---
 
-# Spatial Data Models & Spatial Data Collection
+# Data Types & Spatial Data Models
 
 We use data models represent phenomena in a GIS.  A data model is just a simplified abstractions of reality.
 
@@ -12,12 +12,24 @@ We use data models represent phenomena in a GIS.  A data model is just a simplif
 
 ## Learning Outcomes
 
+### Lecture
+
+- Overview of different types of phenomena
 - Overview of different types of data
-- Overview of different types of Phenomena
 - Differentiate between raster and vector data models.
 - Learn how each model represents space and stores attributes.
 - Learn which types of models are best suited for different applications.
 - Overview of data resolution and how it relates to scale.
+
+### Lab
+
+* Experience a Typical GIS Workflow
+* Explore Canadian Census Data
+* Download Data from Google Earth Engine
+* Work with Raster and Vector Data Layers
+* Conduct Spatial Analysis
+* Normalize and Classify Data
+* Create Charts
 
 # Deliverables
 

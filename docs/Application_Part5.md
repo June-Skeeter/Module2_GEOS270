@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Data Normalization
-parent: Application
-nav_order: 5
+parent: Lab Application
+nav_order: 6
 ---
 
 # Data Normalization

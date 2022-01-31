@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Data Exploration
-parent: Application
-nav_order: 3
+parent: Lab Application
+nav_order: 4
 ---
 
 # Data Exploration

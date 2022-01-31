@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Spatial Analysis
-parent: Application
-nav_order: 4
+parent: Lab Application
+nav_order: 5
 ---
 
 # Spatial Analysis

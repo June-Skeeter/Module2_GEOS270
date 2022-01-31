@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Data Visualization
-parent: Application
-nav_order: 6
+parent: Lab Application
+nav_order: 7
 ---
 
 # Data Visualization
