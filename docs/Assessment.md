@@ -41,132 +41,90 @@ Written answers should be brief but they should adequately answer the question. 
 
 # Lecture Content Questions 
 
+[**1**](Content_Part1_1.md)
+______ have well defined boundaries.  They are countable, meaning there is only a finite number of them.
 
+[**2**](Content_Part1_1.md)
+______ lack well defined boundaries.  Because of this, they can be measured at an infinte number of locations.
 
+[**3**](Content_Part1_1.md)
+We rarely work with multiple types of phenomena at once in GIS because it is too complicated. [T/F]
 
+[**4**](Content_Part1_2.md)
+For these data types, we cannot calculate any meaningful numerical statistics.  (Select all that apply).
+
+- Nominal
+- Ordinal
+- Interval
+- Ratio
+
+[**5**](Content_Part1_2.md)
+Briefly discuss the difference between qualitative and quantitative data.
+
+[**6**](Content_Part1_3.md)
+Negative spatial autocorrelation indicates clustering. [T/F]
+
+[**7**](Content_Part2_1.md)
+The ______ data model represents space as a continuous grid of cells.  Each cell can contain ______ attribute(s).
+
+[**8**](Content_Part2_2.md)
+The ______ data model represents features in space as discrete two-dimensional polygons, one-dimensional lines , and/or "zero-dimensional" points.  Attribute(s) are stored separately in a table, and each row can have ______ attribute(s).
+
+[**9**](Content_Part2_2.md)
+Polygons in a vector dataset can be single part or multipart [T/F].
+
+[**9**](Content_Part2_3.md)
+Both types of phenomena can be represented using either the data model.  But generally speaking, continuous fields phenomena are better represented by the ______ model and discrete objects are better represented by the ______ data model.
+
+[**10**](Content_Part2_3.md)
+Higher resolution rasters have smaller cells which means they take less memory to store [T/F]
+
+[**11**](Content_Part2_3.md)
+The ______ pertains to how we assign data values to grid cells that cover more than one value.
+
+[**12**](Content_Part2_3.md)
+Resolution is a property of the [data/map/both], scale is a property of the [data/map/both].
 
 # Lab Application Questions 
 
-<!-- 
 
-# Module Quiz
+[**13**](Application_Part2.md#monitoring-vegetation-with-satelites)
+What is NDVI and what is it used for?  Describe the patterns you see in NDVI across the metro Vancouver area.
 
-All quiz answers are multiple choice, numeric input, fill in the blank, etc. type questions.  They can be submitted via the Module 1 Quiz that can be found on the Canvas page.  You will have unlimited attempts to take the quiz.
 
-## Application Questions (40pts)
+[**14**](Application_Part3.md#a-note-on-linear-regression)
+Looking at the **VanDA_2016** layer, for every $100 increase in income at the DA level, how much does rental price increase?
 
-[**QA1**](Application_Part3.md#qa1)
-For every $100 increase in income at the CT level, how much does rental price increase?
+[**15**](Application_Part3.md#a-note-on-linear-regression)
+Looking at the **VanDA_2016** layer, What is the R2 score for this model?
 
-[**QA2**](Application_Part3.md#qa2)
-What is the r2 score for this model?
-
-[**QA3**](Application_Part3.md#qa3)
-Which Census Unit displays a more direct relationship between income and housing?
+[**16**](Application_Part3.md#comparing-cts-to-das)
+Which Census Unit displays a more direct relationship between Income and Housing?
 - DA
 - CT
 - About the same
 
-[**Q4**](Application_Part3.md#qa3)
-Which value denotes the lower bound of the "Green Vegetation Class?"
-
-[**Q5**](Application_Part4.md#qa5)
-What is the DAUID of the DA with the highest Mean NDVI value?  *Hint* Double clicking on Green Veg Area in the attribute table allows you to sort in ascending/descending order.
-
-[**Q6**](Application_Part4.md#qa6)
-What is the DAUID of the DA with the highest Green Veg Area?
-
-[**QA7**](Application_Part4.md#qa7)
-Is the DA with the highest mean NDVI value the same as the DA with the greatest area of green vegetation? Y/N
-
-[**QA8**](Application_Part4.md#qa8)
-Create a scatter plot, with the Mean NDVI value (Output from Method 1) on the X-axis and Green Veg Area Sum (Output from Method 2) on the Y-axis.  What is the R2 value? 
-
-[**QA9**](Application_Part4.md#qa9)
-The r2 score indicates Mean NDVI value is [Strong/Moderate/Weak/Very Weak] predictor of Green Veg Area.
-
-[**QA10**](Application_Part4.md#qa10)
-Change the Y-axis to Income and leave the X-axis as Mean NDVI, note the R2 score.  Now change the X-axis to the Green Veg Area Sum and note the R2 score.  Which variable has a "stronger" relationship with income? [Green Veg Area/Mean NDVI]
-
-[**QA11**](Application_Part4.md#qa11)
-Are either of these variables strongly linked to income? [Yes/No/Just Mean NDIV/Just Green Veg Area]
-
-[**QA12**](Application_Part5.md#qa12)
-Create a scatter plot, with the Mean NDVI value (Output from Method 1) on the X-axis and Green Vegetation Fraction (Normalized Output from Method 2) on the Y-axis.  What is the R2 value? 
-
-[**QA13**](Application_Part5.md#qa13)
-The r2 score indicates Mean NDVI value is [Strong/Moderate/Weak/Very Weak] predictor of Green Veg Area.
-
-
----
-
-## Content Questions
-
-[**QC1**](Content_Part1.md#qc1)
-The ______ data model represents space as a continuous grid of ______ which each contain a single ______.
-
-[**QC2**](Content_Part1.md#qc2)
-The ______ data model represents features in space as discrete two-dimensional ______ , one-dimensional ______ , and/or "zero-dimensional"  points.  Attribute information is stored separately in a ______.
-
-[**QC3**](Content_Part2.md#qc3)
-______ objects have well defined boundaries.  They are countable, meaning there is only a ______ number of them.
-
-
-[**QC4**](Content_Part2.md#qc4)
-______ fields lack well defined boundaries.  Because of this, they can be measured at an ______ number of locations.
-
-
-[**QC5**](Content_Part2.md#qc5)
-Both types of phenomena can be represented using either the raster or vector data model.  However, ______ phenomena are generally better represented by the vector model and ______ phenomena are better represented by the raster data model.
-
-[**QC6**](Content_Part2.md#qc6)
-Higher resolution rasters have smaller cells which means they take less memory to store [T/F]
-
-[**QC7**](Content_Part2.md#qc7)
-The ______ problem pertains to how we assign data values to grid cells that cover more than one value.
-
-[**QC8**](Content_Part2.md#qc8)
-Resolution is a property of the [data/map/both], scale is a property of the [data/map/both].
-
-[**QC9**](Content_Part2.md#qc9)
-Polygons in a vector dataset can be single part or multipart [T/F].
-
-
----
-
-# Module Assignment (60 pts)
-
-All written answers should be numbered and record in one document, saved as a .pdf, and uploaded to canvas.  The file submissions should also be saved as .pdf and uploaded as a separate document.  **Written answers can be as brief as you want as long as they answer the question.**
-
-## Application Questions
-
-### Written Answers
-
-[**WA1**](Application_Part2.md#wa1)
-What is NDVI and what is it used for?  Describe the patterns you see in NDVI across the metro Vancouver area.
-
-
-[**WA2**](Application_Part3.md#wa3)
+[**17**](Application_Part3.md#comparing-cts-to-das)
 What are the differences you notice between the CTs and DAs in terms of size and population?
 
+[**18**](Application_Part3.md#use-the-natural-breaks-classification)
+What value does the Natural Breaks method determine should denotes the lower bound of the "Green Vegetation Class?"
 
-[**WA3**](Application_Part5.md#wa3)
-What does data normalization do? How does normalizing effect the relationship with income? Create a new chart with Green Vegetation Fraction on the X-axis and Income on the Y-axis to find out.  How does this compare to when we were looking at the relationship between Total Green Vegetation Area and income?
+[**19**](Application_Part4.md#data-normalization)
+What does data normalization do?
 
+[**20**](Application_Part4.md#inspect-and-compare-the-outputs)
+Describe the relationship between the **Mean** NDVI value per DA and and the **Green Veg Fraction** per DA.  Are they telling us the same thing?  How Strongly are they related?
 
-[**WA4**](Application_Part6.md#wa4)
-What do the results of this analysis show?  Are there any improvement you think we could make to this analysis?
+[**21**](Application_Part4.md#inspect-and-compare-the-outputs)
+What is the R2 score for **Green Veg Fraction** vs. **Income**?
 
-### File Submissions
+[**22**](Application_Part4.md#inspect-and-compare-the-outputs)
+What is the R2 score for **Mean** vs. **Income**?
 
-[**FA1**](Application_Part6.md#fa1)
+[**23**](Application_Part4.md#inspect-and-compare-the-outputs)
+Are either of these variables strongly linked to income? Explain why or why not?    Are there any improvement you think we could make to this analysis?
+
+[**24**](Application_Part6.md#fa1)
 Export your Layout as a .pdf and upload it to Canvas.
 
----
-
-## Content Questions
-
-[**WC1**](Content_Part2.md#wc1)
-Briefly discuss what resolution means with regards to raster and vector data.  
-
- -->

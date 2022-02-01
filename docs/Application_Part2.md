@@ -2,8 +2,19 @@
 layout: default
 title: Satelite Data
 parent: Lab Application
-nav_order: 3
+nav_order: 2
 math: mathjax2
+---
+
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 ---
 
 
@@ -175,13 +186,13 @@ Below are the steps to download the NDVI data.  You can reference the videos bel
 Go to your [Google Drive](https://drive.google.com/drive/my-drive) and find the Van_Greenest.tif, it should be located in the root folder.  It could take 5/10 minutes for GEE to process your request.  Right click on it to download it an put it in your Van_NDVI folder.
 
 
-# Re-Project the Raster Layer
+# Project the Raster Layer
 
-The Van_Greenest Raster needs to be in the same coordinate system as the **CensusData** Feature Dataset for our analysis to be accurate.  However, Feature Datasets only work for **Vector** data.  The NDVI data is in the **Raster** data format. So we have to reproject it manually.  Raster data requires a slightly different tool to do the re-projection than the vector data we worked with in Module 1.  The steps and video below goes shows you how to do that.
+By default, data from GEE is not projected!  It comes in the WGS 1984 Geographic Coordinate System (Lat/Lon referencing the WGS 1984 Datum).  We need to get it into NAD 1983 UTM Zone 10N so it matches the rest of our data!  Feature Datasets only work for **Vector** data.  The NDVI data is in the **Raster** data format. So we have to reproject it manually.  Raster data requires a slightly different tool to do the re-projection than the vector data we worked with in Module 1.  The steps and video below goes shows you how to do that.
 
 **1**{: .label .label-blue } In the Geoprocessing pane, search for the Project Raster tool.
 
-**2**{: .label .label-blue } Set the projection to UTM Zone 10N (find in your favorites for quick access)
+**2**{: .label .label-blue } Set the projection to UTM Zone 10N (find in your favorites for quick access).
 
 **3**{: .label .label-blue } After running, the Van_Greenest_ProjectRaster should show up on your map.
 

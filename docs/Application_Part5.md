@@ -1,30 +1,35 @@
 ---
 layout: default
-title: Data Normalization
+title: Data Visualization
 parent: Lab Application
-nav_order: 6
+nav_order: 5
 ---
 
-# Data Normalization
-One last thing we need to do is control for any confounding factors.  For example, the DAs are different sizes.  To get a better sense of green vegetation per DA, we will Normalize the Green Vegetation area by the Shape Area of the DAs.
 
-## Adding a New Field
-Add a Field called Green_Vegetation_Fraction.
-* Give it the alias Green Vegetation Fraction.
-* Make sure its type is: double.
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+---
 
-## Normalizing
-Now we can Normalize the total area of green vegetation by DA size.  Normalizing, also know as standardizing, is the process of dividing one variable by another correlated variable to account for their relationship.  It can help us identify patterns that might be masked by a confounding variable.  We'll discuss normalization in more depth in leccture later on in term.
 
-**1)**{: .label .label-red } Calculate the Green Vegetation Fraction field.
-* The Field Calculator allows you to do more than just set values like we did in the last step.  We can also create multivariate expressions.
-* Divide SUM_Green_Veg_Area (yours might have a slightly different name) by the Shape_Area.
-* This will give us the percentage of the DA that is covered by Dense Green Vegetation.
+
+# Insert a Layout
+
+Add a layout to your map.  Choose the 8.5":" x 11" Letter size, in the Landscape orientation.  Your task is to create a layout with a **Map** showing Mean NDIV by DA along side a **Chart** showing the relationship between Income and Green Veg Fraction.
+
+# Adding a Chart to the Layout
+
+Arc allows you to add charts to your layout in addition to maps.
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
   position: relative">
-  <iframe src="content/videos/Norm.mp4" title="Processes" scrolling="no" frameborder="0"
+  <iframe src="content/videos/Layout.mp4" title="Processes" scrolling="no" frameborder="0"
     style="border: 0;
    height: 100%;
    left: 0;
@@ -34,14 +39,45 @@ Now we can Normalize the total area of green vegetation by DA size.  Normalizing
    <p>Your browser does not support iframes.</p>
  </iframe>
 </div>
-<a href="content/videos/Norm.mp4" target="_blank">View Image in New Tab</a>
+<a href="content/videos/Layout.mp4" target="_blank">View Image in New Tab</a>
 
+## Change the Chart Title
+In the chart properties pane, under general, you can change the title of the chart so it is more concise and fits on the layout better.
 
-### QA12
-Create a scatter plot, with the Mean NDVI value (Output from Method 1) on the X-axis and Green Vegetation Fraction (Normalized Output from Method 2) on the Y-axis.  What is the R2 value? 
+<img src="content/images/ChartTitle.png" alt="hi" class="inline"/>
 
-### QA13
-The r2 score indicates Mean NDVI value is [Strong/Moderate/Weak/Very Weak] predictor of Green Veg Area.
+## Resize Items and Set Map Scale
+Resize the map and chart so the map is a bit bigger than the chart.  Then set the map scale to 1:100,000 and add the scale to the map.
 
-### WA3
-What does data normalization do? How does normalizing effect the relationship with income? Create a new chart with Green Vegetation Fraction on the X-axis and Income on the Y-axis to find out.  How does this compare to when we were looking at the relationship between Total Green Vegetation Area and income?
+## Add Other Map Elements
+Add all the appropriate map elements: Title, Legend, North Arrow, and Source Statement.  You can reference previous Modules for a refresher on how to do this.
+* For the Data Source in you Name/Source Statement, list Stats Canada and Google Earth Engine as the data sources
+* Your final map should look something like shown below.
+  * The chart should show the relationship between green vegetation area and income.  The map should show mean NDVI value by DA.
+  * This map is just a rough guide, feel free to make your own stylistic choices to improve on it.  Your values should look a bit different, so don't be concerned if the numbers don't match perfectly!
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="content/images/FinalMap.png" title="Processes" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+<a href="content/images/FinalMap.png" target="_blank">View Image in New Tab</a>
+
+<!-- ### FA1
+Export your Layout as a .pdf and upload it to Canvas.
+
+### WA4
+What do the results of this analysis show?  Are there any improvement you think we could make to this analysis?
+ -->
+<!-- The relationship isn't strong, probably because there are other factors that are determine where people with limited resources can afford to live and where those with money choose to live. (7.5 pts)
+
+Things to look at might include: housing cost (rent or land value) instead of income.  Both NDVI & green area combined (eg. multivariate linear regression). Excluding downtown core and focus on just medium density residential areas.  Account for water/beaches (also attracts high income but low NDIV)  .  These are just possible suggestions, they don't have to list these anything that makes sense counts (7.5 pts for listing two or more suggestions, 3.25 pts if just one). -->
+
