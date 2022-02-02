@@ -161,15 +161,16 @@
             <p><br></p>
           <p><b>Discrete Objects:</b> Distinct boundaries</p>
             <p>-Dimensions can be exactly measured</p>
-            <p><br></p>
+            <p>-Countable</p>
           <p><b>Continuous Fields:</b> Lack Distinct boundaries</p>
             <p>-Everywhere has a value</p>
-            <p>-Strong (positive) spatial autocorrelation</p>
+            <p>-Infinitely divisible</p>
+            <!-- <p>-Strong (positive) spatial autocorrelation</p> -->
         </div>
           </div>
       </section>
 
-
+<!-- 
        <section>
         <h3>Spatial Autocorrelation</h3>
         <div class="container">
@@ -177,14 +178,14 @@
           <p><img src="images/03-autocorrelation.png" width="800"></p>
           <p>The measure of similarity between objects across space.  It allows us to make some a key assumptions when representing spatial data.</p>
            </div>
-      </section>
+      </section> -->
 
        <section>
         <h2>Types of Phenomena</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
             <p><br></p>
-          <p>Whether a phenomenon is <b>discrete</b> or <b>continuous</b> depends on <i>scale</i>.  It also depends on our <i>perspective</i>.  Some phenomenon are a bit of both.</p>
+          <p>Whether a phenomenon is <b>discrete</b> or <b>continuous</b> depends on our <i>perspective</i> and the <i>scale</i> of our analysis.  Many phenomenon are a bit of both.</p>
         </div>
           </div>
       </section>
@@ -195,8 +196,8 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <br>
-            <p>-A <b>strike</b> is a discrete object</p>
-            <p class="fragment">-A lighting bolt ...? </p>
+            <li>A <b>strike</b> is a discrete object</li>
+            <li class="fragment">A lighting bolt ...? </li>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/lightning.jpg" height ="500"></p>
@@ -209,9 +210,11 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <br>
-            <p>-A <b>strike</b> is a discrete object</p>
-            <p>-A lighting bolt ...? </p>
-            <p>-Strike <b>frequency</b> is a continuous field</p>
+            <ul>
+            <li>A <b>strike</b> is a discrete object</li>
+            <li>A lighting bolt ...? </li>
+            <li>Strike <b>frequency</b> is a continuous field</li>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/03-lightning-density.gif" height ="500"></p>
@@ -225,7 +228,10 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <br>
-            <p>-At a <b>large scale</b> a continuous field</p>
+            <ul>
+              <li>Continuous field at <b>large scale</b></li>
+            <p><br></p>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/beach.jpg" width ="500"></p>
@@ -238,8 +244,10 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <br>
-            <p>-At a <b>large scale</b> a continuous field</p>
-            <p>-At a <b>small scale</b> a discrete object</p>
+            <ul>
+              <li>Continuous field at <b>large scale</b></li>
+              <li>Discrete object at <b>small scale</b></li>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/beach_small_scale.png" widht ="500"></p>
@@ -252,9 +260,11 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <br>
-            <p>-At a <b>large scale</b> a continuous field</p>
-            <p>-At a <b>small scale</b> a discrete object</p>
-            <p>-Unless you change the <a href="https://seeing.climatecentral.org/#11/49.2544/-123.1169?show=lockinAnimated&level=8&unit=feet&pois=hide"><i>time scale</i></a></p>
+            <ul>
+              <li>Continuous field at <b>large scale</b></li>
+              <li>Discrete object at <b>small scale</b></li>
+              <li>Unless you change the <a href="https://seeing.climatecentral.org/#11/49.2544/-123.1169?show=lockinAnimated&level=8&unit=feet&pois=hide"><i>time scale</i></a></li>
+            </ul>
 
           </div>
           <div class="col" style="text-align: right;">
@@ -269,30 +279,31 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <p><br></p>
-          <p>All that said, its helpful for us to think about the discrete vs. continuous dichotomy.  As long as we recognize that it's not a perfect classification.</p>
+          <p>That said, it is a helpful framework as long as we recognize the 
+           discrete vs. continuous dichotomy is not a perfect classification.</p>
         </div>
           </div>
       </section>
 
 
-
+<!-- 
       <section>
         <h2>Discrete Objects</h2>
         <div class="container">
-          <!-- <div class="col" style="text-align: Left;"> -->
             <p>Typically better suited for representation with the vector data model.</p>
-          <!-- </div> -->
         </div>
       </section>
-
+ -->
       <section>
         <h3>Discrete Objects</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>Buildings</p>
-            <p>-Concrete Boundaries</p>
-            <p>-Countable</p>
-            <p>-Real Physical Object</p>
+            <b>Buildings</b>
+            <ul>
+              <li>Concrete Boundaries</li>
+              <li>Countable</li>
+              <li>Real Physical Object</li>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/building.png" width="500"></p>
@@ -304,10 +315,12 @@
         <h3>Discrete Objects</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>National & Sub-National Boundaries</p>
-            <p>-Distinct Boundaries</p>
-            <p>-Countable</p>
-            <p>-Not a Physical Object</p>
+            <b>Political Boundaries</b>
+            <ul>
+            <li>Distinct Boundaries</li>
+            <li>Countable</li>
+            <li>Not a Physical Object</li>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/03-vector.png" width="500"></p>
@@ -315,24 +328,24 @@
         </div>
       </section>
 
-      <section>
+  <!--     <section>
         <h2>Continuous Fields</h2>
         <div class="container">
-          <!-- <div class="col" style="text-align: Left;"> -->
             <p>Typically better suited for representation the raster data model.</p>
-          <!-- </div> -->
         </div>
-      </section>
+      </section> -->
 
        <section>
         <h3>Continuous Fields</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>Elevation</p>
-            <p>-Everywhere on Earth</p>
-            <p>-No "number of elevations"</p>
-            <p>-A physical property</p>
-          <p><img src="images/geoid_2.png" width="600"></p>
+            <b>Elevation</b>
+            <ul>
+            <li>Everywhere on Earth</li>
+            <li>No "number of elevations"</li>
+            <li>A physical property</li>
+            </ul>
+          <!-- <p><img src="images/geoid_2.png" width="600"></p> -->
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/elevation.png" width="500"></p>
@@ -346,10 +359,12 @@
         <h3>Continuous Fields</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>Density of tweets</p>
-            <p>-Everywhere has this too</p>
-            <p>-Derived from something countable</p>
-            <p>-Not a physical property</p>
+            <b>Density of tweets</b>
+            <ul>
+            <li>Everywhere has this too</li>
+            <li>Derived from something countable</li>
+            <li>Not a physical property</li>
+            </ul>
           </div>
           <div class="col" style="text-align: right;">
           <p><img src="images/tweet_density.jpg" width="500"></p>
@@ -373,7 +388,7 @@
         <h3>Working Together</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>In this Module, you sample a continuous field (NDVI) using discrete objects (census boundaries).</p>
+            <p>In this Module:<br>You sample a continuous field (NDVI) with<br>discrete objects (census units).</p>
           </div>
           <div class="right" style="text-align: right;">
           <p><img src="images/FinalMap.png" width="500"></p>

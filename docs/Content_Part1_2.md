@@ -28,6 +28,9 @@ Attributes that describe *where* are known as **Spatial Data** while all other a
 <a href="content/DataTypes.html" target="_blank">View Slides in New Tab</a>
 
 
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/DataTypes.pdf)
+
+
 ## Summary of Measurement Scales and Data Types
 
 <img src="content/images/03-data-types.png" width="1000">
@@ -39,7 +42,7 @@ Attributes that describe *where* are known as **Spatial Data** while all other a
 |Equality       |x      |x      |x       |x    |
 |Counts/Mode    |x      |x      |x       |x    |
 |Rank/Order     |       |x      |x       |x    |
-|Median         |       |x      |x       |x    |
+|Median         |       |~      |x       |x    |
 |Add/Subtract   |       |       |x       |x    |
 |Mean           |       |       |x       |x    |
 |Multiply/Divide|       |       |        |x    |

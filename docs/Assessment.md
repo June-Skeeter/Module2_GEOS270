@@ -6,7 +6,7 @@ nav_order: 4
 
 # Assessment
 
-You can use the submit your answers to the Assessment via the Module 2 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the module if you need help finding answers.  If you would like a .pdf version of the instructions, you can it download it [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/Assessment.pdf).
+You can use the submit your answers to the Assessment via the Module 2 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the module if you need help finding answers.  If you would like a .pdf version of the instructions, you can it download it [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/Assessment.pdf).
 
 
 ## Written Answers & File Uploads

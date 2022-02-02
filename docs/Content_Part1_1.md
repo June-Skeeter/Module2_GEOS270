@@ -28,3 +28,5 @@ A key determinant of which data model is best for a given application is the typ
 <a href="content/Phenomena.html" target="_blank">View Slides in New Tab</a>
 
 
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/Phenomena.pdf)
+
