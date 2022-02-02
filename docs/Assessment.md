@@ -61,7 +61,7 @@ For these data types, we cannot calculate meaningful numerical statistics.  (Sel
 [**5**](Content_Part1_2.md)
 Briefly discuss the difference between qualitative and quantitative data and their respective sub-types.
 
-[**6**](Content_Part1_3.md)
+[**6**](Content_Part2_0.md)
 Negative spatial autocorrelation indicates clustering. [T/F]
 
 [**7**](Content_Part2_1.md)

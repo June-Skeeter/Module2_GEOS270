@@ -30,21 +30,3 @@ Attributes that describe *where* are known as **Spatial Data** while all other a
 
 Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/DataTypes.pdf)
 
-
-## Summary of Measurement Scales and Data Types
-
-<img src="content/images/03-data-types.png" width="1000">
-
-## Summary of Arithemetic Opperations by Data Type
-
-|   Operation   |Nominal|Ordinal|Interval|Ratio|
-|---------------|-------|-------|--------|-----|
-|Equality       |x      |x      |x       |x    |
-|Counts/Mode    |x      |x      |x       |x    |
-|Rank/Order     |       |x      |x       |x    |
-|Median         |       |~      |x       |x    |
-|Add/Subtract   |       |       |x       |x    |
-|Mean           |       |       |x       |x    |
-|Multiply/Divide|       |       |        |x    |
-
-<!-- <img src="content/images/scale_1.png" alt="hi" class="inline"/> -->

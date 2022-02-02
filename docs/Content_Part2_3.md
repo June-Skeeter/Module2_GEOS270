@@ -4,7 +4,7 @@ title: Choice of Data Model
 parent: Spatial Data Models
 grand_parent: Lecture Content
 has_children: True
-nav_order: 3
+nav_order: 4
 ---
 
 

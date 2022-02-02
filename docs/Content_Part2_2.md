@@ -3,7 +3,7 @@ layout: default
 title: Vector Data
 parent: Spatial Data Models
 grand_parent: Lecture Content
-nav_order: 2
+nav_order: 3
 ---
 <!-- 
 <details open markdown="block">
