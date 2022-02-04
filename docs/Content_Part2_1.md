@@ -35,6 +35,9 @@ A simple but storage intensive method for representing data that is widely ustil
 </div>
 <a href="content/Raster.html" target="_blank">View Image in New Tab</a>
 
+
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/Raster.pdf)
+
 ## File Types
 
 Raster data can come in many different formats.  **GeoTIFF** which has the extension .tif is one of the most common/functional is the .  This format is based of the Tag Image File Format (TIFF), a common file type used by graphic artists and photographers.  A TIFF file stores metadata (data about the data) as tags.  For instance, your camera might store a tag that describes the make and model of the camera and another for the date the photo was taken when it saves a picture. A GeoTIFF is a standard .tif image format plus additional tags spatial tags denoting spatial information including: 
@@ -47,15 +50,3 @@ Other file types you will likely encounter when working with raster data include
 * 1) IMG - A proprietary image format commonly used by ESRI products
 * 2) JPEG2000 - A geospatial version of the common .jpg image type
 * 3) ASCII - An older human readable format (simple text file) with slower performance than the types listed above.
-<!-- 
----
-
-# Assessment Questions
-
-### QC1
-
-The ______ data model represents space as a continuous grid of ______ which each contain a single ______.
-
-
-
- -->

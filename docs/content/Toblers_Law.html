@@ -92,11 +92,14 @@
 
 
        <section>
-          <h3>This might seem obvious</h3>
+          <h2>First Law of Geography</h2>
           <div class="col" style="text-align: Left;"> 
-          <p>-People in the same neighborhood interact more.</p> 
-          <p>-Orca pods in different areas develop different dialects.</p>
-          <p>-Trees on Vancouver Island are more related to their neighbors than to a trees in the New Brunswick.</p>
+            <p>This might seem obvious:</p>
+            <ul>
+              <li>Students in the same class interact more.</li>
+              <li>Orca pods in different areas develop different dialects.</li>
+              <li>Hemlocks in Vancouver are more related to each other than to Hemlocks in New Brunswick.</li>
+            </ul>
           </div>
       </section>
 
@@ -104,52 +107,28 @@
         <h2>First Law of Geography</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-          <p>"Everything is related to everything else, but near things are more related than distant things."</p>
-          <p>-There is some nuance to the statement</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/03-spatial-is-special.jpg" width="600"></p>
+          <p>There is <b>nuance</b> to the statement.  It is not a grantee of <b>similarity</b>.</p>
+          <ul>
+          <li>Vancouver's average snowfall is < 30 cm/yr</li>
+          <li>Grouse Mountain frequently exceeds 9 m/yr.</li>
+          </ul>
            </div>
       </section>
 
        <section>
-        <h3>Not a Guarantee of Similarity</h3>
-        <div class="container">
-          <div class="left" style="text-align: Left;">
-          <p>Vancouver snowfall:</p>
-          <p>- < 30 cm/yr</p>
-          <p>Grouse Mountain:</p>
-          <p>- 9 m/yr</p> 
-           </div>
-          <div class="right" style="text-align: Right;">
-          <p><img src="images/bc_snow.png" width="800"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>How to Describe Similarity?</h3>
+        <h3>Spatial Heterogeneity</h3>
         <div class="container">
           <div class="col" style="text-align: center;">
-          <p><img src="images/03-heterogeneity.JPG" width="800"></p>
-           </div>
+          <img src="images/03-heterogeneity.JPG" width="650">
+          <p>Uneven distribution across space, characteristic of many natural systems.</p>
+          </div>
       </section>
 
        <section>
-        <h3>Spatial Autocorrelation</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/03-autocorrelation.png" width="800"></p>
-          <p>The measure of similarity between objects across space.  It allows us to make some a key assumptions when representing spatial data.</p>
-           </div>
-      </section>
-
-       <section>
-        <h3>Can't see the Forest for the Trees</h3>
+        <h3>Map the Forest not the Trees</h3>
         <div class="container">
           <div class="left" left = "30%" style="text-align: Left;">
-          <p>We don't need the location of every tree to map a forest.</p>
-          <p>-Use average presence of trees over a larger area.</p>
+          <p>We don't need the location of every tree to map a forest.  Use average presence of trees over a larger area instead!</p>
            </div>
           <div class="right" right="70%" style="text-align: Right;">
           <p><img src="images/03-forest-for-the-trees.jpg" width="800"></p>
@@ -160,18 +139,73 @@
         <h3>Spatial Autocorrelation</h3>
         <div class="container">
           <div class="col" style="text-align: Center;">
-          <p><img src="images/03-autocorrelation.png" width="800"></p>
-          <p>Closely linked to scale, we'll discuss this more in depth down the line.</p>
+          <img src="images/03-autocorrelation.png" width="800">
+          <p>Measure of similarity across space.</p>
            </div>
       </section>
 
 
        <section>
-        <h3>Data Models</h3>
+        <h3>similarity across space</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>Natural systems are typically heterogeneous, but also spatially autocorrelated.</p>
+            <ul>
+              <li>Allows a key assumptions when representing spatial data.</li>
+              <li>Closely linked to scale.  What is heterogeneous at a large scale, could be <b>homogeneous</b> at a smaller scale.</li>
+            </ul>
+          
+           </div>
+      </section>
+
+
+       <section>
+        <h3>Scale Dependence</h3>
+        <div class="container">
+          <div class="left" left = "30%" style="text-align: Left;">
+          <img src="images/footprint_class.jpg" width="800">
+           </div>
+          <div class="right" right="70%" style="text-align: Right;">
+            <img src="images/land_class.png" width="380">
+           </div>
+      </section>
+
+
+       <section>
+        <h3>Scale Dependence</h3>
+        <div class="container">
+          <div class="left" left = "30%" style="text-align: Left;">
+          <img src="images/footprint_class.jpg" width="800">
+           </div>
+          <div class="right" right="70%" style="text-align: Right;">
+            <!-- <img src="images/land_class.png" width="400"> -->
+            <p>Acknowledge the heterogeneity where appropriate.</p>
+           </div>
+      </section>
+
+
+
+
+       <section>
+        <h3>Scale Dependence</h3>
+        <div class="container">
+          <div class="left" left = "30%" style="text-align: Left;">
+          <!-- <img src="images/footprint_class.jpg" width="800"> -->
+          <p>Count on spatial autocorrelation<br> and call a unit homogeneous where appropriate.</p>
+           </div>
+          <div class="right" right="70%" style="text-align: Right;">
+            <img src="images/land_class.png" width="380">
+            <!-- <p>Acknowledge the heterogeneity where appropriate</p> -->
+           </div>
+      </section>
+
+
+       <section>
+        <h2>Spatial Data Models</h2>
         <div class="container">
           <div class="col" style="text-align: Center;">
           <p><img src="images/03-vector-v-raster.jpg" width="800"></p>
-          <p>Exploit spatial autocorrelation to simplify our representation of spatial data.</p>
+          <p>We can exploit spatial autocorrelation to simplify our representation of spatial data.</p>
            </div>
       </section>
 

@@ -28,5 +28,5 @@ Attributes that describe *where* are known as **Spatial Data** while all other a
 <a href="content/DataTypes.html" target="_blank">View Slides in New Tab</a>
 
 
-Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/DataTypes.pdf)
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/DataTypes.pdf)
 

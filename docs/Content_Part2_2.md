@@ -35,6 +35,9 @@ In GIS, vector data are commonly encountered as: political boundaries, cenus dat
 </div>
 <a href="content/Vector.html" target="_blank">View Image in New Tab</a>
 
+
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/Vector.pdf)
+
 ## File Types
 
 Like raster data, vector data can also come in many different formats. The **shapefile** format which has the extension .shp is one of the most common file types you will encounter.  A .shp file stores the geographic coordinates of each vertex in the vector, as well as metadata including:

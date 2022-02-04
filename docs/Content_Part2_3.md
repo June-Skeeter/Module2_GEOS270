@@ -30,6 +30,8 @@ Scale can dictate aspects of our analysis.  But it can also *be dictated* by our
 
 
 
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/ScaleRes.pdf)
+
 
 # Choice of Data Model: Practical Considerations
 
@@ -51,3 +53,6 @@ Lets compare the spatial data models side by side and think through some of the 
 </div>
 <a href="content/ChoiceOfModel.html" target="_blank">View Slides in New Tab</a>
 
+
+
+Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/ChoiceOfModel.pdf)
