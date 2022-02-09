@@ -69,6 +69,11 @@
   width:60%;
 }
 
+
+ul {
+  padding-left: 5px;
+}
+
   </style>
 </head>
 
@@ -177,7 +182,12 @@
         <h2>Polygons</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-          <p>Polygons are useful for representing many different objects depending: political boundaries, climate zones, lakes, etc.</p>
+          <p>Useful for many objects depending on scale:</p>
+          <ul>
+            <li>Political boundaries</li>
+            <li>Climate zones</li>
+            <li>Lakes</li>
+          </ul>
            </div>
           <div class="col" style="text-align: Right;">
           <p><img src="images/03-vector.png" width="600"></p>
@@ -259,6 +269,56 @@
            </div>
       </section>
 
+
+      
+        <section style="text-align: left;">
+        <h3>Advantages: Vector Model</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>The geometry itself contains information about what the dataset creator thought was important</p>
+          <ul style="margin-left: -10px;">
+           <li>Compact data structure: smaller file sizes</li>
+           <li>A good representation of discrete spatial features</li>
+           <li>Easy to query and select by attributes</li>
+           <li>Graphic output is usually more aesthetically pleasing</li>
+           <li>Topology (connectivity) - Proximity & Network Analysis </li>
+          </ul>
+          </div>
+         </section>
+
+
+       <section style="text-align: left;">
+        <h3>Disadvantages: Vector Model</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <ul style="margin-left: -10px;">
+           <li>Complex data structures compared to rasters</li>
+           <li>Topology (connectivity) - can be a huge head ache when creating a layer</li>
+           <li>Some tasks (overlay of layers) can be computationally expensive</li>
+           <li>No variability within polygons possible.</li>
+          </ul>
+          </div>
+         </section>
+
+
+
+       <section style="text-align: left;">
+        <h3>Disadvantages: Vector Model</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <ul style="margin-left: -10px;">
+           <li>Less suited for continuous variables (requires significant generalization)</li>
+           <li>Less suited for temporal change</li>
+          </ul>
+          </div>
+
+
+          <div class="col" style="text-align: left;">
+            <img src="images/03-topo.png" width="600">
+          </div>
+         </section>
+
+
     </div><!-- .slides -->
 
   </div><!-- .reveal -->
@@ -276,6 +336,8 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.04,
+      width: 1100,
 
       transition: 'none', // none/fade/slide/convex/concave/zoom
 

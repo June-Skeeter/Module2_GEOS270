@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css">
   <!-- see https://cdnjs.com/libraries/reveal.js/3.6.0 for what's available -->
   <!-- examples: simple, beige, black, blood, league, moon, night, serif, sky, solarized, white ... -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/sky.css" id="theme">
   <!-- see: https://cdnjs.com/libraries/highlight.js/ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css">
 
@@ -35,13 +35,12 @@
   </script>
 
   <!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
     <![endif]-->
   <style>
     body {
       /* make it totally black */
-      /*background-color: black;*/
-      background-color: #ffefc2;
+      background-color: black;
     }
 
     .container {
@@ -70,8 +69,14 @@
   width:60%;
 }
 
+
+ul {
+  padding-left: 5px;
+}
+
   </style>
 </head>
+
 
 <body>
 
@@ -83,7 +88,7 @@
         <h3>Map Scale</h3>
         <div class="container">
           <div class='col' style="text-align:left;">
-          <p>Map scale is the <b>Ratio</b> of units on the map to units in the real world.  </p>
+          <p>Map scale is the <b>Ratio</b> of units on the map to units in the real world.</p>
           </div>
           <div class="col" style="text-align: left;">
           <img src="images/scale_1.png" width="500">
@@ -299,6 +304,8 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.04,
+      width: 1100,
 
       transition: 'none', // none/fade/slide/convex/concave/zoom
 

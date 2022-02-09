@@ -52,21 +52,26 @@
     }
 
 
+
 .left {
   left:-8.33%;
   text-align: left;
   float: left;
-  width:40%;
+  width:50%;
   z-index:-10;
 }
 
 .right {
-  left:31.25%;
+  /*left:31.25%;*/
   top: 75px;
   float: right;
   text-align: right;
   z-index:-10;
-  width:60%;
+  width:50%;
+}
+
+ul {
+  padding-left: 5px;
 }
 
   </style>
@@ -78,40 +83,67 @@
 
     <div class="slides">
 
-       <section>
-        <h2>Raster Data Model</h2>
-        <div class="container">
-          <div class="left" style="text-align: Left;">
-          <p>Represents space <b>continuously</b> as a grid of cell (aka pixels)</p>
-          <p>-A simple but storage intensive format.</p>
-           </div>
-          <div class="right" style="text-align: Right;">
-          <p><img src="images/03-raster-example.png" width="600"></p>
-           </div>
-      </section>
 
+       <section>
+        <h1>Raster Data</h1>
+        <div class="container" style="text-align:center;">
+          <p>A simple, storage intensive format best suited for <b>continuous phenomena</b>.</p>
+      </section>
 
        <section>
         <h2>Raster Data Model</h2>
         <div class="container">
           <div class="left" style="text-align: Left;">
-          <p>Each cell can have <b>only one value</b>.  Multiple raster (bands) can be combined to yield more information</p>
-          <p>-This is how digital photos work.  The store three separate bands (R,B,& B)</p>
+          <p>Represents space <b>continuously</b>:</p>
+          <ul>
+            <li>Rectangular grid of equally sized cells</li>
+            <li>Each cell only has <b>one value</b></li>
+          </ul>
            </div>
           <div class="right" style="text-align: Right;">
           <p><img src="images/03-raster-example.png" width="600"></p>
+           </div>
+      </section>
+
+
+       <section>
+        <h2>Raster Data Model</h2>
+        <div class="container">
+          <div class="left" style="text-align: Left;">
+          <p>Multiple <b>bands</b> needed for multiple attributes</p>
+          <ul>
+            <li>Standard color photos have three bands:
+              <ul>
+                <li>Red, green, & blue</li>
+              </ul>
+            </li>
+            <li>LANDSAT8 has 11 bands:
+              <ul>
+                <li>Ultra blue to thermal infrared</li>
+              </ul>
+            </li>
+          </ul>
+           </div>
+          <div class="right" style="text-align: center;">
+          <img src="images/DeltaMap.png" width="350">
+
            </div>
       </section>
 
        <section>
-        <h3>Resolution</h3>
+        <h2>Resolution & Extent</h2>
         <div class="container">
           <div class="left" style="text-align: Left;">
-          <p>Cell size dictates <b>resolution</b>.</p>
-          <p><b>10 m cells</b> are:</p>
-          <p>-10 x 10 m (100 m<sup>2</sup>)</p>
-          <p><b>1 m cells</b> are:</p>
-          <p>-1 x 1 m (1 m<sup>2</sup>)</p>
+          <p><b>Resolution</b>: cell size.</p>
+          <ul>
+            <li>1 m x 1 m = 1 m<sup>2</sup></li>
+          </ul>
+          <p><b>Extent</b>: depends on number of cells.</p>
+          <ul>
+            <li>5 rows, 5 columns</li>
+            <li>1 m cell size</li>
+            <li>Covers 5 m x 5 m</li>
+          </ul>
            </div>
           <div class="right" style="text-align: Right;">
           <p><img src="images/03-raster-example.png" width="600"></p>
@@ -119,22 +151,172 @@
       </section>
 
 
+      <section>
+        <h2>Resolution & Extent</h2>
+        <div class="container">
+          <div class="col" style="text-align: Left;">
+          <p><b>Resolution</b>: 10 m cell size = 100 m<sup>2</sup></p>
+          <p><b>Extent</b>: varies with number of cells.</p>
+             <table>
+                  <tr>
+                    <th>Rows</th>
+                    <th>Columns</th>
+                    <th>Extent</th>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>50 m x 50 m</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>50 m x 100 m</td>
+                  </tr>
+                  <tr>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>1 km x 1 km</td>
+                  </tr>
+                </table> 
+           </div>
+      </section>
+
+   
+       <section>
+        <h2>Implications</h2>
+        <div class="container">
+          <div class="col" style="text-align: Left;">
+          <p>Higher resolution is more realistic.</p>
+          <ul>
+            <li>At a certain point features become unrecognizable.</li>
+            <li>Higher resolution = larger file for equivalent areas.</li>
+          </ul>
+           </div>
+          <div class="col" style="text-align: Right;">
+          <p><img src="images/03-raster-resolution.png" width="400"></p>
+           </div>
+      </section>
+
+
+       <section style="text-align: left;">
+        <h2>File Size</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>The number of cells per image dictates file size:<br>Cells = rows x columns x bands.  </p>
+             <table>
+                  <tr>
+                    <th>Extent</th>
+                    <th>Bands</th>
+                    <th>Cell Size</th>
+                    <th>Cells</th>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>1</td>
+                    <td>100 m</td>
+                    <td>100 cells</td>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>1</td>
+                    <td>1 m</td>
+                    <td>1,000,000 cells</td>
+                  </tr>
+                    <td>1 x 1 km</td>
+                    <td>3</td>
+                    <td>100 m</td>
+                    <td>300 cells</td>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>3</td>
+                    <td>1 m</td>
+                    <td>3,000,000 cells</td>
+                  </tr>
+                </table> 
+           </div>
+         </section>
+
+
+
+       <section style="text-align: left;">
+        <h2>File Size</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>Increases <b>exponentially</b> with resolution and <b>linearly</b> with number of bands.</p>
+             <table>
+                  <tr>
+                    <th>Extent</th>
+                    <th>Bands</th>
+                    <th>Cell Size</th>
+                    <th>Cells</th>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>1</td>
+                    <td>100 m</td>
+                    <td>100 cells</td>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>1</td>
+                    <td>1 m</td>
+                    <td>1,000,000 cells</td>
+                  </tr>
+                    <td>1 x 1 km</td>
+                    <td>3</td>
+                    <td>100 m</td>
+                    <td>300 cells</td>
+                  </tr>
+                  <tr>
+                    <td>1 x 1 km</td>
+                    <td>3</td>
+                    <td>1 m</td>
+                    <td>3,000,000 cells</td>
+                  </tr>
+                </table> 
+           </div>
+         </section>
+
+
+
+
+       <section style="text-align: left;">
+        <h2>Practical Considerations</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>Why does this matter? A decade (87,600 bands) of snow cover data:<br>
+              ~ 5 min for the red area<br>
+              ~ 2 hrs for the orange area (17x larger)</p>
+
+           </div>
+           <div class="col">
+             
+            <img src="images/03-ecmwf.png">
+           </div>
+         </section>
+
+
+       <section>
+        <h2>Metadata in ArcPro</h2>
+        <div class="container">
+          <div class="left" style="text-align: Left;">
+            <img src="images/van_greenest.png" width="600">
+           </div>
+          <div class="right" style="text-align: Right;">
+          <img src="images/extent.png" width="600">
+           </div>
+      </section>
+
+
+
+
+<!--  
        <section>
         <h3>Extent</h3>
         <div class="container">
-          <div class="left" style="text-align: Left;">
-          <p>The number of rows and columns given the cells size, determines the <b>extent</b> (aka domain or bounds) of a raster image.</p>
-           </div>
-          <div class="right" style="text-align: Right;">
-          <p><img src="images/03-raster-example.png" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Extent</h3>
-        <div class="container">
-          <div class="left" style="text-align: Left;">
+          <div class="col" style="text-align: Left;">
           <p>1 m cell size, 5 rows x 5 columns: </p>
           <p><b>Total area</b> 25 m<sup>2</sup></p>
           <p>10 m cell size, 5 rows x 5 columns: </p>
@@ -143,21 +325,45 @@
           <div class="right" style="text-align: Right;">
           <p><img src="images/03-raster-example.png" width="600"></p>
            </div>
-      </section>
+      </section> -->
 
 
-       <section>
-        <h3>Resolution</h3>
+
+       <section style="text-align: left;">
+        <h3>Mixed Pixel Problem</h3>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Has significant implications for how data will be represented <i>depending</i> on <b>scale</b> </p>
-          <p>I'll cover more on Wednesday</p>
+          <div class="col" style="text-align: left;">
+          <p>Loss of information</p>
+          <ul>
+            <li>A cell can only have one value.</li>
+            <li>What if it covers multiple values?</li>
+            <li>A- Winner take all</li>
+            <li>B- Cell center </li>
+            
+          </ul>
            </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/03-raster-resolution.png" width="400"></p>
+           <div class="col">
+             
+            <img src="images/03-mixed-pixel.jpg">
            </div>
-      </section>
+         </section>
 
+
+       <section style="text-align: left;">
+        <h3>Disadvantages: Raster Model</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>Loss of information during rasterization</p>
+            <li>Reductions in cell size may lead to inability to recognize spatial features.</li>
+            <li>A "bigger" issue for larger cells</li>
+            <li>Lost information cannot be recovered</li>
+            <!-- <li>Re-projection requires resampling cells (more information loss)</li> -->
+          </div>
+          <div class="col" style="text-align: right;">
+            
+            <img src="images/03-mixed-pixel-2.png">
+          </div>
+         </section>
 
        <section>
         <h3>Raster Overlay</h3>
@@ -174,6 +380,29 @@
           <p></p>
            </div>
       </section>
+
+
+       <section style="text-align: left;">
+        <h3>Advantages: Raster Model</h3>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <!-- <p>Usually <b>continuous fields</b><br> -->
+          <ul style='margin-left: -10px'>
+            <li>Well suited for continuous variables: in space <b>and</b> time</li>
+            <li>Simple data structure makes overlay is easy and efficient</li>
+          </ul>
+           </div>
+
+          <div class="col" style="text-align: left;">
+          <!-- <ul style='margin-left: -10px'> -->
+            <img src="images/03-raster-overlay.png" width="500">
+          <!-- </ul> -->
+            </p>
+            
+
+         </section>
+
+
 
     </div><!-- .slides -->
 
@@ -192,6 +421,8 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.04,
+      width: 1100,
 
       transition: 'none', // none/fade/slide/convex/concave/zoom
 

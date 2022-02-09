@@ -35,6 +35,8 @@ In GIS, vector data are commonly encountered as: political boundaries, cenus dat
 </div>
 <a href="content/Vector.html" target="_blank">View Image in New Tab</a>
 
+https://github.com/June-Skeeter/Module1_GEOS270/blob/main/docs/content/images/DeltaMap.png
+
 
 Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/Vector.pdf)
 

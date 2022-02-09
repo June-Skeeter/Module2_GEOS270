@@ -56,7 +56,7 @@
   left:-8.33%;
   text-align: left;
   float: left;
-  width:40%;
+  width:50%;
   z-index:-10;
 }
 
@@ -66,9 +66,13 @@
   float: right;
   text-align: right;
   z-index:-10;
-  width:60%;
+  width:50%;
 }
 
+
+ul {
+  padding-left: 5px;
+}
   </style>
 </head>
 
@@ -86,11 +90,11 @@
           <p>-Waldo Tobler</p>
            </div>
           <div class="col" style="text-align: Right;">
-          <p><img src="images/03-spatial-is-special.jpg" width="600"></p>
+          <p><img src="images/03-spatial-is-special.jpg" width="500"></p>
            </div>
       </section>
 
-
+<!-- 
        <section>
           <h2>First Law of Geography</h2>
           <div class="col" style="text-align: Left;"> 
@@ -102,68 +106,223 @@
             </ul>
           </div>
       </section>
+ -->
+
+   <section>
+        <h2>First Law of Geography</h2>
+        <div class="container">
+          <div class="col" style="text-align: Left;">
+          <p>This might seem obvious:</p>
+            <ul>
+              <li>Students in the same class interact more.</li>
+              <li>Orca pods in different areas develop different dialects.</li>
+              <li>Hemlocks in BC are more related to each other than to hemlocks in NB.</li>
+           </div>
+          <div class="col" style="text-align: Right;">
+          <p><img src="images/03-spatial-is-special.jpg" width="500"></p>
+           </div>
+      </section>
+
 
        <section>
         <h2>First Law of Geography</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-          <p>There is <b>nuance</b> to the statement.  It is not a grantee of <b>similarity</b>.</p>
+          <p>Not a <b>grantee</b> of similarity.</p>
           <ul>
           <li>Vancouver's average snowfall is < 30 cm/yr</li>
           <li>Grouse Mountain frequently exceeds 9 m/yr.</li>
           </ul>
+        </div>
+          <div class="col" style="text-align: Right;">
+          <p><img src="images/03-spatial-is-special.jpg" width="500"></p>
            </div>
       </section>
 
        <section>
-        <h3>Spatial Heterogeneity</h3>
+        <h2>Spatial Heterogeneity</h2>
         <div class="container">
           <div class="col" style="text-align: center;">
           <img src="images/03-heterogeneity.JPG" width="650">
-          <p>Uneven distribution across space, characteristic of many natural systems.</p>
+          <p>Uneven distribution across space.</p>
           </div>
       </section>
 
+
+        <section>
+        <h2>Bonini's paradox</h2>
+        <div class="container">
+          <div class="col" style="text-align: Left;">
+           <p>As a model of a complex system becomes more complete, it becomes less understandable.
+            <ul>
+              <li>It will eventually be just as difficult to understand as the real-world processes it represents. <ul><li><b>e.g.</b> a 1:1 scale map</li></ul></li>
+              <li>At a certain point, we have to ignore the heterogeneity.</li>
+            </ul></p>
+           </div>
+         </div>
+      </section>
+
+
        <section>
-        <h3>Map the Forest not the Trees</h3>
+        <h2>Revisiting Map Scale</h2>
+        <div class="container">
+          <div class='col' style="text-align:left;">
+          <p><b>Map scale</b>: ratio of map units to real world units.</p>
+          <ul>
+            <li><u> Small Scale</u>: Large area, more generalization, less detail.</li>
+            <li><u> Large Scale</u>: Small area, more detail, less generalization.</li>
+          </ul>
+          </div>
+          <div class="col" style="text-align: left;">
+          <img src="images/scale_general.png" width="500">
+           </div>
+       </section>
+
+
+      <section>
+        <h2>Time Scale</h2>
+        <div class="container">
+          <div class='col' style="text-align:center;">
+          <img src="images/03-time-scale.png" width="625">
+          <p>Comparison of Different Time Scales</p>
+           </div>
+       </section>
+
+
+       <section>
+        <h2>Analysis Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>Different phenomena operate on different temporal and spatial scales.</p>
+          <ul>
+            <li>No need to model tornadoes in a global climate model.</li>
+            <li>Impractical to map turbulence globally.</li>
+          </ul>
+           </div>
+
+          <div class="col" style="text-align: left;">
+          <img src="images/03-scales.png" width="500">
+          </div>
+       </section>
+
+
+       <section>
+        <h2>Analysis Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>Different phenomena operate on different temporal and spatial scales.</p>
+          <ul>
+            <li>Identify the scale relevant to your analysis.</li>
+          </ul>
+           </div>
+
+          <div class="col" style="text-align: left;">
+          <img src="images/coastal_scale.jpg" width="600">
+          </div>
+       </section>
+
+
+       <section>
+        <h2>Spatial Autocorrelation</h2>
+        <div class="container">
+          <div class="col" style="text-align: Center;">
+          <img src="images/03-autocorrelation.png" width="900">
+          <p>Measure of similarity across space.</p>
+           </div>
+      </section>
+
+       <section>
+        <h2>Spatial Data Models</h2>
+        <div class="container">
+          <div class="col" style="text-align: Center;">
+          <p><img src="images/03-vector-v-raster.jpg" width="1000"></p>
+          <p>We can exploit spatial autocorrelation to simplify our representation of spatial data.</p>
+           </div>
+      </section>
+
+       <section>
+        <h2>Map the Forest not the Trees</h2>
         <div class="container">
           <div class="left" left = "30%" style="text-align: Left;">
-          <p>We don't need the location of every tree to map a forest.  Use average presence of trees over a larger area instead!</p>
+          <p>We don't need the location of every tree to map a forest.</p>
+          <ul>
+            <li>Use average presence of trees over a larger area.</li>
+          </ul>
            </div>
           <div class="right" right="70%" style="text-align: Right;">
           <p><img src="images/03-forest-for-the-trees.jpg" width="800"></p>
            </div>
       </section>
 
-       <section>
-        <h3>Spatial Autocorrelation</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <img src="images/03-autocorrelation.png" width="800">
-          <p>Measure of similarity across space.</p>
-           </div>
-      </section>
-
 
        <section>
-        <h3>similarity across space</h3>
+        <h2>Similarity across space</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-            <p>Natural systems are typically heterogeneous, but also spatially autocorrelated.</p>
+            <p>Natural systems usually exhibit degrees of spatial heterogeneity <b>and</b> autocorrelation.</p>
             <ul>
-              <li>Allows a key assumptions when representing spatial data.</li>
-              <li>Closely linked to scale.  What is heterogeneous at a large scale, could be <b>homogeneous</b> at a smaller scale.</li>
+              <li>What is heterogeneous at one scale may be <b>homogeneous</b> at another.</li>
             </ul>
-          
            </div>
       </section>
+
+
+      <section>
+        <h2>Spatial Resolution</h2>
+        <div class="container">
+          <div class='col' style="text-align:left;">
+          <p>Relates to the level of spatial detail in a dataset.</p>
+          <p>What is the smallest feature that is included in a dataset?</p>
+          </div>
+          <div class="col" style="text-align: left;">
+          <img src="images/03-resolution.gif" width="500">
+           </div>
+       </section>
+
+      <section>
+        <h2>Temporal Resolution</h2>
+        <div class="container">
+          <div class='col' style="text-align:left;">
+          <p>Relates to the level of temporal detail in a dataset.</p>
+          <p>Over what time period is the data valid?</p>
+          <p>Are there multiple observations?</p>
+          </div>
+          <div class="col" style="text-align: center;">
+          <img src="images/03-NDVI.gif" height ="450">
+           </div>
+       </section>
+
+
+       <section>
+        <h2>Resolution vs. Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>The scale of our analysis dictates our desired resolution.</p>
+          <p>Data resolution can limit the scale of our analysis.</p>
+           </div>
+      </section>
+
+
+<!--       <section>
+        <h2>Revisiting Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: Left;">
+          <p>All maps require simplification of real world features, amount depends on map scale:</p>
+          <p>Smaller scale maps require more generalization.</p>
+          <p>Larger scale maps can include more detail.</p>
+           </div>
+          <div class="col" style="text-align: center;">
+          <p><img src="images/scale_general.png" width="500"></p>
+           </div>
+         </div>
+      </section> -->
 
 
        <section>
         <h3>Scale Dependence</h3>
         <div class="container">
           <div class="left" left = "30%" style="text-align: Left;">
-          <img src="images/footprint_class.jpg" width="800">
+          <img src="images/footprint_class.jpg" width="425">
            </div>
           <div class="right" right="70%" style="text-align: Right;">
             <img src="images/land_class.png" width="380">
@@ -175,11 +334,15 @@
         <h3>Scale Dependence</h3>
         <div class="container">
           <div class="left" left = "30%" style="text-align: Left;">
-          <img src="images/footprint_class.jpg" width="800">
+          <img src="images/footprint_class.jpg" width="425">
            </div>
-          <div class="right" right="70%" style="text-align: Right;">
+          <div class="right" right="70%" style="text-align: left;">
             <!-- <img src="images/land_class.png" width="400"> -->
-            <p>Acknowledge the heterogeneity where appropriate.</p>
+            <p>Acknowledge the heterogeneity where appropriate.
+              <ul>
+                <li>Large scale maps might need more attention to detail.</li>
+                <li>Higher resolution data.</li>
+              </ul></p>
            </div>
       </section>
 
@@ -191,7 +354,11 @@
         <div class="container">
           <div class="left" left = "30%" style="text-align: Left;">
           <!-- <img src="images/footprint_class.jpg" width="800"> -->
-          <p>Count on spatial autocorrelation<br> and call a unit homogeneous where appropriate.</p>
+          <p>Count on spatial autocorrelation<br> and call a unit homogeneous where appropriate.
+              <ul>
+                <li>Smaller scale maps can be more generalized.</li>
+                <li>Lower resolution data.</li>
+              </ul></p>
            </div>
           <div class="right" right="70%" style="text-align: Right;">
             <img src="images/land_class.png" width="380">
@@ -200,14 +367,6 @@
       </section>
 
 
-       <section>
-        <h2>Spatial Data Models</h2>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/03-vector-v-raster.jpg" width="800"></p>
-          <p>We can exploit spatial autocorrelation to simplify our representation of spatial data.</p>
-           </div>
-      </section>
 
 
 
@@ -228,6 +387,9 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.04,
+      width: 1100,
+
 
       transition: 'none', // none/fade/slide/convex/concave/zoom
 
