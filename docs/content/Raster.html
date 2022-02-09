@@ -187,8 +187,9 @@ ul {
         <h2>Implications</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-          <p>Higher resolution is more realistic.</p>
+          <p>Loss of information during rasterization.</p>
           <ul>
+            <li>A "bigger" issue for larger cells.</li>
             <li>At a certain point features become unrecognizable.</li>
             <li>Higher resolution = larger file for equivalent areas.</li>
           </ul>
@@ -197,6 +198,27 @@ ul {
           <p><img src="images/03-raster-resolution.png" width="400"></p>
            </div>
       </section>
+
+       <section>
+        <h2>Mixed Pixel Problem</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>One cell: one value</p>
+          <ul>
+            <li>What if it covers multiple values?</li>
+            <ul>
+              <li>A: Winner take all</li>
+              <li>B: Cell center </li>
+            </ul>
+            <li>Other options?</li>
+            
+          </ul>
+           </div>
+           <div class="col">
+             
+            <img src="images/03-mixed-pixel.jpg">
+           </div>
+         </section>
 
 
        <section style="text-align: left;">
@@ -279,16 +301,15 @@ ul {
            </div>
          </section>
 
-
-
-
        <section style="text-align: left;">
-        <h2>Practical Considerations</h2>
+        <h2>Why does this matter?</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-            <p>Why does this matter? A decade (87,600 bands) of snow cover data:<br>
-              ~ 5 min for the red area<br>
-              ~ 2 hrs for the orange area (17x larger)</p>
+            <p>Downloading a decade (87,600 bands) of snow cover data:
+              <ul>
+                <li>5 min for the red area</li>
+                <li>2 hrs for the orange area (17x larger)</li>
+              </ul>
 
            </div>
            <div class="col">
@@ -296,7 +317,6 @@ ul {
             <img src="images/03-ecmwf.png">
            </div>
          </section>
-
 
        <section>
         <h2>Metadata in ArcPro</h2>
@@ -310,101 +330,86 @@ ul {
       </section>
 
 
-
-
-<!--  
-       <section>
-        <h3>Extent</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>1 m cell size, 5 rows x 5 columns: </p>
-          <p><b>Total area</b> 25 m<sup>2</sup></p>
-          <p>10 m cell size, 5 rows x 5 columns: </p>
-          <p><b>Total area</b> 2500 m<sup>2</sup></p>
-           </div>
-          <div class="right" style="text-align: Right;">
-          <p><img src="images/03-raster-example.png" width="600"></p>
-           </div>
-      </section> -->
-
-
-
        <section style="text-align: left;">
-        <h3>Mixed Pixel Problem</h3>
+        <h2>Why does this matter?</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-          <p>Loss of information</p>
-          <ul>
-            <li>A cell can only have one value.</li>
-            <li>What if it covers multiple values?</li>
-            <li>A- Winner take all</li>
-            <li>B- Cell center </li>
-            
-          </ul>
+            <p>Processing times will increase as well:
+              <ul>
+                <li>Any manipulation or analysis of the red area will be much faster than the orange area</li>
+              </ul>
            </div>
            <div class="col">
-             
-            <img src="images/03-mixed-pixel.jpg">
+            <img src="images/03-ecmwf.png">
            </div>
-         </section>
-
-
-       <section style="text-align: left;">
-        <h3>Disadvantages: Raster Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-            <p>Loss of information during rasterization</p>
-            <li>Reductions in cell size may lead to inability to recognize spatial features.</li>
-            <li>A "bigger" issue for larger cells</li>
-            <li>Lost information cannot be recovered</li>
-            <!-- <li>Re-projection requires resampling cells (more information loss)</li> -->
-          </div>
-          <div class="col" style="text-align: right;">
-            
-            <img src="images/03-mixed-pixel-2.png">
-          </div>
          </section>
 
        <section>
-        <h3>Raster Overlay</h3>
+        <h2>Raster Overlay</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-          <p>Algebraic expressions can be performed efficiently.</p> 
-          <p>A <b>key advantage</b> of raster data model.</p>
-          <p>A = Winter Temperature, B = Summer Temperature</p>
+          <p>A <b>key advantage</b> of raster data model is how algebraic expressions can be performed efficiently.</p>
+          <ul>
+            <li>A: Winter Temperature</li>
+            <li>B: Summer Temperature</li>
+            <li>Range: B-A</li>
+            <li>Average: (A+B)/2</li>
+          </ul>
            </div>
           <div class="col" style="text-align: center;">
-          <p><img src="images/03-raster-overlay.png" width="500"></p>
-          <p>Range: B-A</p>
-          <p>Average: (A+B)/2</p>
-          <p></p>
+          <img src="images/03-raster-overlay.png" width="500">
            </div>
       </section>
 
 
        <section style="text-align: left;">
-        <h3>Advantages: Raster Model</h3>
+        <h2>Key Advantages</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
           <!-- <p>Usually <b>continuous fields</b><br> -->
-          <ul style='margin-left: -10px'>
-            <li>Well suited for continuous variables: in space <b>and</b> time</li>
-            <li>Simple data structure makes overlay is easy and efficient</li>
+          <ul>
+            <li>Well suited for continuous phenomena:</li>
+            <ul>
+              <li>Continuous in <b>space</b> and <b>time</b>.</li>
+            </ul>
+          </li>
+            <li>Simple data structure makes overlay is easy and efficient.</li>
           </ul>
            </div>
 
+         </section>
+
+
+       <section style="text-align: left;">
+        <h2>GeoTIFF</h2>
+        <div class="container">
           <div class="col" style="text-align: left;">
-          <!-- <ul style='margin-left: -10px'> -->
-            <img src="images/03-raster-overlay.png" width="500">
-          <!-- </ul> -->
-            </p>
-            
+          <p>One of the most common/functional raster formats, based of the Tag Image File Format (TIFF).  A TIFF file stores metadata (data about the data) as tags.  A GeoTIFF is a standard .tif image format plus additional tags spatial tags denoting spatial information including: </p>
+          <ul>
+            <li>Extent (minimum x,y and maximum x,y)</li>
+            <li>Resolution (cell size)</li>
+            <li>Projection, Coordinate system, and datum</li>
+           </div>
+
+         </section>
+
+
+       <section style="text-align: left;">
+        <h2>Other file types</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>Raster data can come in many different formats.  You will likely encounter when working with raster data include:</p>
+          <ul'>
+            <li>IMG - A proprietary image format commonly used by ESRI products</li>
+            <li>JPEG2000 - A geospatial version of the common .jpg image type</li>
+            <li>ASCII - An older human readable format (simple text file) with slower performance than the types listed above</li>
+           </div>
 
          </section>
 
 
 
-    </div><!-- .slides -->
+  </div><!-- .slides -->
 
   </div><!-- .reveal -->
 
