@@ -86,13 +86,63 @@ ul {
     <div class="slides">
 
 
+
+       <section>
+        <h2>Resolution &. Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p><b>1)</b>How does the scale of our analysis dictate our desired resolution?</p>
+          <p><b>2)</b>How can data resolution limit the scale of our analysis?</p>
+           </div>
+      </section>
+
+
+       <section>
+        <h2>Resolution & Scale</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+          <p>We want to work with high resolution data because: &#8593; resolution = &#8595; generalization = &#8595; uncertainty</p>
+          <ul>
+            <li>In reality, this isn't always practical or possible.</li>
+            <li>We must try to strike a balance.</li> 
+          </ul>
+           </div>
+      </section>
+
+       <section>
+        <h2>Things to consider</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>What is the "lowest" acceptable resolution?</p>
+
+          <ul>
+            <li>Smaller scale analysis won't need the same level of detail.</li> 
+            <li>Looking at national immigration patterns, maybe you only need provincial level data?</li>
+
+          </ul>
+           </div>
+      </section>
+
+
+       <section>
+        <h2>Things to consider</h2>
+        <div class="container">
+          <div class="col" style="text-align: left;">
+            <p>Change the scope of our analysis?</p>
+            <li>If you need a high resolution analysis, work at a larger scale and focus on a small area.</li>
+            <li>If you need to analyze a large area, work at small scales and accept the uncertainty that comes with coarser resolution.</li>
+          </ul>
+           </div>
+      </section>
+
+
        <section style="text-align: center;">
         <h2>Comparing Data Models</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
           <h3>Raster</h3>
           <p>Usually <b>continuous fields</b><br>
-          <ul style='margin-left: -10px'>
+          <ul>
             <li>Grid of cells (pixels) with continuous coverage</li>
             <li>Each cell has <b>one</b> value per band (layer)</li>
             <li>One raster image can have <b>many</b> bands</li>
@@ -103,166 +153,84 @@ ul {
           <div class="col" style="text-align: left;">
           <h3>Vector</h3>
           <p>Usually <b>discrete objects</b></p>
-          <ul style="margin-left: -10px;">
+          <ul>
            <li>Points, Lines, and/or Polygons</li>
            <li>Each object can have <b>many</b> attributes</li>
            <li>Objects may overlap, have gaps, or be continuous</li>
           </ul>
           </div>
          </section>
-<!-- 
-       <section style="text-align: left;">
-        <h3>Advantages: Raster Model</h3>
+
+
+       <section style="text-align: center;">
+        <h2>Advantages</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-          <ul style='margin-left: -10px'>
-            <li>Well suited for continuous variables: in space <b>and</b> time</li>
+          <h3>Raster</h3>
+          <p>  
+            <ul>
+            <li>Good for continuous variables: in space <b>and</b> time</li>
             <li>Simple data structure makes overlay is easy and efficient</li>
           </ul>
-           </div>
-
-          <div class="col" style="text-align: left;">
-            <img src="images/03-raster-overlay.png" width="500">
             </p>
-            
-
-         </section> -->
-
-<!-- 
-       <section style="text-align: left;">
-        <h3>Disadvantages: Raster Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-            <p> The # cells per image dictates file size. # Cells = rows x columns x # of bands</p>
-          <ul style='margin-left: -10px'>
-            <li><b>Example:</b> DEM (1 band), covering 1 x 1 km area.</li>
-            <li style='margin-left: +20px'>100 m cell size: 10 rows & columns = 100 cells</li>
-            <li style='margin-left: +20px'>1 m cell size: 1000 rows & columns  = 1,000,000 cells</li>
-            <li>RGB image (3 bands), would have 300 and 3,000,000 cells</li>
-            <li>File size changes <b>exponentially</b> with resolution and <b>linearly</b> with number of bands.</li>
-
-          </ul>
            </div>
-         </section> -->
-<!-- 
 
-
-       <section style="text-align: left;">
-        <h3>Large data volumes</h3>
-        <div class="container">
           <div class="col" style="text-align: left;">
-            <p>Practically speaking, why does this matter?  Downloading a decade (87600 bands) of temperature takes:<br>
-              ~ 1 min for the red area<br>
-              ~ 4 hrs for the orange area (17x larger)</p>
-
-           </div>
-           <div class="col">
-             
-            <img src="images/03-ecmwf.png">
-           </div>
-         </section>
-
-       <section style="text-align: left;">
-        <h3>Disadvantages: Raster Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-            <p>Loss of information</p>
-            <li>"Mixed Pixel Problem"</li>
-            <li>A cell can only have one value.</li>
-            <li>What if it covers multiple values?</li>
-            <li>A- Winner take all</li>
-            <li>B- Cell center </li>
-            
-          </ul>
-           </div>
-           <div class="col">
-             
-            <img src="images/03-mixed-pixel.jpg">
-           </div>
-         </section>
-
-
-
-       <section style="text-align: left;">
-        <h3>Disadvantages: Raster Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-            <p>Loss of information during rasterization</p>
-            <li>Reductions in cell size may lead to inability to recognize spatial features.</li>
-            <li>A "bigger" issue for larger cells</li>
-            <li>Lost information cannot be recovered</li>
-            <!-- <li>Re-projection requires resampling cells (more information loss)</li> 
-            
-            <img src="images/03-mixed-pixel-2.png">
-          </ul>
-         </section> -->
-<!-- 
-        <section style="text-align: left;">
-        <h3>Advantages: Vector Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-          <p>The geometry itself contains information about what the dataset creator thought was important</p>
-          <ul style="margin-left: -10px;">
-           <li>Compact data structure: smaller file sizes</li>
-           <li>A good representation of discrete spatial features</li>
+          <h3>Vector</h3>
+          <p>
+          <ul>
+           <li>Compact data structure</li>
+           <li>Good for discrete objects</li>
            <li>Easy to query and select by attributes</li>
-           <li>Graphic output is usually more aesthetically pleasing</li>
-           <li>Topology (connectivity) - Proximity & Network Analysis </li>
           </ul>
           </div>
          </section>
 
 
-       <section style="text-align: left;">
-        <h3>Disadvantages: Vector Model</h3>
+       <section style="text-align: center;">
+        <h2>DisAdvantages</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-          <ul style="margin-left: -10px;">
-           <li>Complex data structures compared to rasters</li>
-           <li>Topology (connectivity) - can be a huge head ache when creating a layer</li>
-           <li>Some tasks (overlay of layers) can be computationally expensive</li>
-           <li>No variability within polygons possible.</li>
+          <h3>Raster</h3>
+          <p>
+          <ul>
+            <li>Mixed pixel problem</li>
+            <li>One attribute per cell</li>
+            <li>Large data volumes</li>
+          </ul>
+            </p>
+           </div>
+
+          <div class="col" style="text-align: left;">
+          <h3>Vector</h3>
+          <p>
+          <ul>
+           <li>Complex data structure</li>
+           <li>Overlay can be computationally expensive</li>
+           <li>No variability within polygons</li>
           </ul>
           </div>
          </section>
 
 
-
-       <section style="text-align: left;">
-        <h3>Disadvantages: Vector Model</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-          <ul style="margin-left: -10px;">
-           <li>Less suited for continuous variables (requires significant generalization)</li>
-           <li>Less suited for temporal change</li>
-          </ul>
-          </div>
-
-
-          <div class="col" style="text-align: left;">
-            <img src="images/03-topo.png" width="600">
-          </div>
-         </section>
- -->
 
        <section style="text-align: left;">
         <h2>Which data model is “Best”?</h2>
         <div class="container">
           <div class="col" style="text-align: left;">
-          <ul style='margin-left: -10px'>
-            <li>No single data model is suitable for all types of data or analysis</li>
-            <li>Most GIS systems employ both raster and vector data structures so that the user can choose the model best suited to the representation of their data</li>
-            <li>It is possible to convert back and forth between models</li>
-            <li>However, this results in a loss of information and may introduce additional error each time a conversion is made</li>
+
+          <p>Neither data model is suitable for all types of data or analysis.
+          <ul>
+            <li>You will frequently use both the raster and vector models.</li>
+            <li>It is possible to convert back and forth between models.</li>
+            <ul>
+            <li>This can introduce error, only do when necessary.</li>
+            </ul>
           </ul>
             </p>
            </div>
-
+         </div>
          </section>
-
-
-
-
 
     </div><!-- .slides -->
 

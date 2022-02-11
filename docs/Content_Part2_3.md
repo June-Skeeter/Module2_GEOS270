@@ -8,7 +8,7 @@ nav_order: 4
 ---
 
 
-
+<!-- 
 # Scale and Resolution
 
 Scale can dictate aspects of our analysis.  But it can also *be dictated* by our the the resolution of our data.
@@ -31,11 +31,11 @@ Scale can dictate aspects of our analysis.  But it can also *be dictated* by our
 
 
 Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module2_GEOS270/main/docs/content/ScaleRes.pdf)
+ -->
 
+# Choice of Data Model
 
-# Choice of Data Model: Practical Considerations
-
-Lets compare the spatial data models side by side and think through some of the practical considerations relating to our choice of a given data model.
+Lets recap to think through some Practical Considerations and compare the spatial data models side by side.
 
 
 <div style="overflow: hidden;
