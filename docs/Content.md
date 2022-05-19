@@ -5,8 +5,32 @@ has_children: True
 nav_order: 2
 ---
 
-# Representing Spatial Data in Computer
+# How do we represent Geographic Information digitally?  
 
 
-How do we represent Geographic Information digitally?  Now that we've covered how we project spatial data, we can learn how we actually represent that spatial data in a computer.  But first, lets take a step back and talk more broadly about data.  What is it, what does it represent?  What makes spatial data different from other types of data?
+Now that we've covered how we project spatial data, we can learn how we actually represent that spatial data in a computer.  But first, lets take a step back and talk more broadly about data.
+
+<details>
+<summary>What are it data?</summary>
+
+<i>A collection of information (qualitative or quantiative) that describe a phenomena.</i>
+
+</details>
+<br>
+
+<details>
+<summary>What makes spatial data different from other types of data?</summary>
+
+<i>The spatial coordinates must be treated differently (projected).  Further, spatial relationshps like proximity must be accounted for.</i>
+
+</details>
+<br>
+
+<details>
+<summary>Do similar issues arise with temporal data?</summary>
+
+<i>Yes!  Time units must be treated differently and temporal relationshps like proximity are generally important.</i>
+
+</details>
+<br>
 
