@@ -137,7 +137,7 @@ Adding new fields to our attribute table allows us to perform calculations or co
 * Make sure to save the field then close the field window and go back to the attribute table.
 
 **5**{: .label .label-blue } Choose Select by Attribute and set your query to: Where gridcode is equal to 3.
-* Our condition is that grdicode (attribute from the NDVI layer representing vegetation category) is equal to 3 (green vegetation).
+* Our condition is that gridcode (attribute from the NDVI layer representing vegetation category) is equal to 3 (green vegetation).
 
 **6**{: .label .label-blue } Right click on Green Veg Area and choose **Calculate Field**.  This allows us to define a function and apply it to the table.
 * Set the expression to: Green_Veg_Area = Shape_Area as the.
@@ -146,7 +146,7 @@ Adding new fields to our attribute table allows us to perform calculations or co
 
 **7**{: .label .label-blue } We want to assign all other rows a 0.  We can quickly invert our selection with the **Switch** button.
 * Calculate the field again, but with Green_Veg_Area = 0
-  * We have selected girdcode 1 & 2 (Not vegetation) so they all get zeros.
+  * We have selected gridcode 1 & 2 (Not vegetation) so they all get zeros.
 
 
 <div style="overflow: hidden;
