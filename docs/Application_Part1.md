@@ -32,7 +32,7 @@ We are going to use Google Earth Engine (GEE) to download some satelite data.  T
 * Follow the instructions to sign up using your Google account.  
 * Once you have gone through the sign up process, you can close GEE.  We'll go back to it later.
 
-**Note** If you are unable to create an account, contact you TA for a link to the data set.
+**Note** If you are unable to create an account, contact your TA for a link to the data set.
 
 # Create a Project
 
@@ -98,7 +98,7 @@ We need to create a simple boundary file to upload to Google Earth Engine so we 
 
 **2**{: .label .label-red } Set VanCMA_CT_2016 as the input
 
-* **Note**: The output will be saved to your Van_NDVI.gdb as a feature class by default, but feature classes ca not be read by Google Earth Engine.
+* **Note**: The output will be saved to your Van_NDVI.gdb as a feature class by default, but feature classes can not be read by Google Earth Engine.
 
 * *Instead*: save the output as a **Shapefile** (.shp) one level up in your Van_NDVI project folder and name it **Boundary**.  Shapefiles are just a different way of storing vector data.
 
