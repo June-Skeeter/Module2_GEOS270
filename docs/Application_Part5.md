@@ -20,7 +20,7 @@ nav_order: 5
 
 # Insert a Layout
 
-Add a layout to your map.  Choose the 8.5":" x 11" Letter size, in the Landscape orientation.  Your task is to create a layout with a **Map** showing Mean NDIV by DA along side a **Chart** showing the relationship between Income and Green Veg Fraction.
+Add a layout to your map.  Choose the 8.5":" x 11" Letter size, in the Landscape orientation.  Your task is to create a layout with a **Map** showing Mean NDVI by DA along side a **Chart** showing the relationship between Income and Green Veg Fraction.
 
 # Adding a Chart to the Layout
 
