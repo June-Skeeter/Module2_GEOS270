@@ -170,7 +170,7 @@ Adding new fields to our attribute table allows us to perform calculations or co
 
 Summarizing by a field (eg. DAUID - the Dissemination Unit ID) allows us to get statistics of interest for specific columns.
 
-**8**{: .label .label-blue } Right click on DAUID in the attribute table and click Summarize.
+**8**{: .label .label-blue } Make sure you clear the selection. Right click on DAUID in the attribute table and click Summarize.
 * Set Green Veg Area as the Field and choose Sum as the statistic type.
 * Make sure DAUID as the Case Field.
 * The resulting table will show the total of just the green vegetation area per DA, and can be joined to the Van_DA_2016 layer.
@@ -200,7 +200,7 @@ Summarizing by a field (eg. DAUID - the Dissemination Unit ID) allows us to get 
 ## Data Normalization
 <!-- {: .no_toc } -->
 
-One last thing we need to do is control for any confounding factors.  For example, the DAs are different sizes.  To get a better sense of green vegetation per DA, we will Normalize the Green Vegetation area by the Shape Area of the DAs.  This is knonw as **Normalizing**, sometimes also referred to as standardizing.  It is the process of dividing one variable by another variable to account for their relationship.  It can help us identify patterns that might be masked by a confounding variable.  We'll discuss normalization in more depth in leccture later on in term.
+One last thing we need to do is control for any confounding factors.  For example, the DAs are different sizes.  To get a better sense of green vegetation per DA, we will Normalize the Green Vegetation area by the Shape Area of the DAs.  This is known as **Normalizing**, sometimes also referred to as standardizing.  It is the process of dividing one variable by another variable to account for their relationship.  It can help us identify patterns that might be masked by a confounding variable.  We'll discuss normalization in more depth in lecture later on in term.
 
 
 **10**{: .label .label-blue } In the VanDA_2016 attribute table, add a Field called **Green_Vegetation_Fraction**.
