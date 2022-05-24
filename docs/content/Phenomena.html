@@ -131,7 +131,9 @@
           <div class="left" style="text-align: Left;">
           <!-- <p>A phenomena can be:</p> -->
           <p>A dog on a kayak!</p>
-          <p>Anything and everything are phenomena!</p>
+
+            <li class="fragment">Anything and everything are phenomena!</li>
+          <!-- <p>Anything and everything are phenomena!</p> -->
           </div>
           <div class="right" style="text-align: center;">
           <p><img src="images/dog_on_a_boat.jpg" width="1000"></p>
@@ -143,13 +145,11 @@
         <h2>Types of Phenomena</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p><br></p>
-          <p><b>Discrete Objects:</b> Distinct boundaries</p>
-            <p><br></p>
-            <p><br></p>
-          <p><b>Continuous Fields:</b>Lack Distinct boundaries</p3>
-            <p><br></p>
-            <p><br></p>
+            <!-- <p><br></p> -->
+          <p><b>Discrete Objects</b></p>
+        </div>
+        <div class="col" style="text-align: Left;">
+          <p><b>Continuous Fields</b></p>
         </div>
           </div>
       </section>
@@ -158,13 +158,18 @@
         <h2>Types of Phenomena</h2>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p><br></p>
-          <p><b>Discrete Objects:</b> Distinct boundaries</p>
-            <p>-Dimensions can be exactly measured</p>
-            <p>-Countable</p>
-          <p><b>Continuous Fields:</b> Lack Distinct boundaries</p>
-            <p>-Everywhere has a value</p>
-            <p>-Infinitely divisible</p>
+          <p><b>Discrete Objects</b></p>
+          <ul>
+            <li>Distinct boundaries - can be exactly measured</li>
+            <li>Finite - countable</li>
+          </ul>
+        </div>
+        <div class="col" style="text-align: Left;">
+          <p><b>Continuous Fields</b></p>
+          <ul>
+            <li>No distinct boundaries - everywhere has a value</li>
+            <li>Infinitely divisible - not countable</li>
+          </ul>
             <!-- <p>-Strong (positive) spatial autocorrelation</p> -->
         </div>
           </div>
@@ -185,7 +190,11 @@
         <div class="container">
           <div class="col" style="text-align: Left;">
             <p><br></p>
-          <p>Whether a phenomenon is <b>discrete</b> or <b>continuous</b> depends on our <i>perspective</i> and the <i>scale</i> of our analysis.  Many phenomenon are a bit of both.</p>
+          <p>When is a phenomenon <b>discrete</b> or <b>continuous</b>?</p>
+          <ul>
+            <li>To an extent, it depends on our <i>perspective</i> and the <i>scale</i> of our analysis.</li>
+            <li>Many phenomenon are a bit of both.</li>
+          </ul>
         </div>
           </div>
       </section>
@@ -263,7 +272,7 @@
             <ul>
               <li>Continuous field at <b>large scale</b></li>
               <li>Discrete object at <b>small scale</b></li>
-              <li>Unless you change the <a href="https://seeing.climatecentral.org/#11/49.2544/-123.1169?show=lockinAnimated&level=8&unit=feet&pois=hide"><i>time scale</i></a></li>
+              <li>Unless you change the <a href="https://coastal.climatecentral.org/"><i>time scale</i></a></li>
             </ul>
 
           </div>
@@ -367,7 +376,7 @@
             </ul>
           </div>
           <div class="col" style="text-align: right;">
-          <p><img src="images/tweet_density.jpg" width="500"></p>
+          <p><img src="images/tweet_density.png" width="650"></p>
           </div>
         </div>
       </section>
@@ -388,10 +397,14 @@
         <h3>Working Together</h3>
         <div class="container">
           <div class="col" style="text-align: Left;">
-            <p>In this Module:<br>You sample a continuous field (NDVI) with<br>discrete objects (census units).</p>
+            <p>In this Module you calculate:</p>
+            <ul>
+              <li>Average NDVI value (<b>continuous field</b>)</li>
+              <li>Within census areas (<b>discrete objects</b>)</li>
+              </ul>
           </div>
           <div class="right" style="text-align: right;">
-          <p><img src="images/FinalMap.png" width="500"></p>
+          <p><img src="images/FinalMap.png" width="600"></p>
           </div>
         </div>
       </section>
@@ -413,6 +426,8 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.04,
+      width: 1200,
 
       transition: 'none', // none/fade/slide/convex/concave/zoom
 
