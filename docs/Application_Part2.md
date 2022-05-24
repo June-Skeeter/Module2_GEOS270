@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Satelite Data
+title: Satellite Data
 parent: Lab Application
 nav_order: 2
 math: mathjax2
@@ -65,7 +65,7 @@ The gray shaded areas indicate regions of the electromagnetic spectrum that are 
 
 <img src='content/images/NewFile.png' width="550">
 
-**3**{: .label .label-red } Copy the following Javascrpt code from in the grey box below and paste it into the code pane (top middle).
+**3**{: .label .label-red } Copy the following Javascript code from in the grey box below and paste it into the code pane (top middle).
 
 ```javascript
 // Coordinates for Vancouver

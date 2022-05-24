@@ -102,7 +102,7 @@ Which Census Unit displays a more direct relationship between income and housing
 To get a feel for the distribution of NDVI values in the dataset, we're going to plot them in a histogram to aid our visual inspection of the NDVI data.
 
 **1**{: .label .label-blue } Create a chart showing the count of cells by NDVI values.
-* Right click the projected NDIV layer and click Create Chart > Histogram
+* Right click the projected NDVI layer (NDVI layer = Van_Greenest_ProjectRaster) and click Create Chart > Histogram
 * Under Variable, set Band_1 as Number.  Note what shows up on the chart.
 * A histogram represents a distribution by grouping the data into bins (ranges), and plotting the count of values (eg. raster cells) for by bin.
   * Change the bin number to see how changing the size of the bins, impacts how you perceive the data.  Try 10, then try 50.
@@ -135,7 +135,7 @@ To get a feel for the distribution of NDVI values in the dataset, we're going to
 ## Use The Natural Breaks Classification
 
 
-**3**{: .label .label-blue } Search for the Reclassify tool in the geoprocessing pane.  Use the projected NDVI layer as the input.  Name your layer **Classification** (or something else that makes sense to you).  Specific names aren't so important, but the point is to give things a name that makes sense to your.
+**3**{: .label .label-blue } Search for the Reclassify tool (Spatial Analyst Tools) in the geoprocessing pane.  Use the projected NDVI layer as the input.  Name your layer **Classification** (or **reclass** if you recieve an error about name length being > 13 characters).  Specific names aren't so important, but the point is to give things a name that makes sense to you.
   
 
 **4**{: .label .label-blue } Click classify to set the classification scheme.  Set the method to **Natural Breaks**.  This is a method designed to automatically find an "optimal" fit to a dataset.  We'll talk more about classification in Module 3.
