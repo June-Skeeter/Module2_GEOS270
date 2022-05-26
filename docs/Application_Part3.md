@@ -135,7 +135,7 @@ To get a feel for the distribution of NDVI values in the dataset, we're going to
 ## Use The Natural Breaks Classification
 
 
-**3**{: .label .label-blue } Search for the Reclassify tool (Spatial Analyst Tools) in the geoprocessing pane.  Use the projected NDVI layer as the input.  Name your layer **Classification** (or **reclass** if you recieve an error about name length being > 13 characters).  Specific names aren't so important, but the point is to give things a name that makes sense to you.
+**3**{: .label .label-blue } Search for the Reclassify tool in the geoprocessing pane.  Use the projected NDVI layer as the input.  Name your layer **Classification** (or **reclass** if you recieve an error about name length being > 13 characters).  Specific names aren't so important, but the point is to give things a name that makes sense to you.
   
 
 **4**{: .label .label-blue } Click classify to set the classification scheme.  Set the method to **Natural Breaks**.  This is a method designed to automatically find an "optimal" fit to a dataset.  We'll talk more about classification in Module 3.
