@@ -110,7 +110,7 @@ ul {
         <h2>Raster Data Model</h2>
         <div class="container">
           <div class="left" style="text-align: Left;">
-          <p>Multiple <b>bands</b> needed for multiple attributes</p>
+          <p>Multiple attributes, require multiple <b>bands</b>
           <ul>
             <li>Standard color photos have three bands:
               <ul>
@@ -119,10 +119,12 @@ ul {
             </li>
             <li>LANDSAT8 has 11 bands:
               <ul>
-                <li>Ultra blue to thermal infrared</li>
+                <li>"False Color Images"</li>
+                <li>Spectral Indicies (NDVI)</li>
               </ul>
             </li>
           </ul>
+        </p>  
            </div>
           <div class="right" style="text-align: center;">
           <img src="images/DeltaMap.png" width="350">
@@ -304,7 +306,7 @@ ul {
        <section style="text-align: left;">
         <h2>Why does this matter?</h2>
         <div class="container">
-          <div class="col" style="text-align: left;">
+          <div class="left" style="text-align: left;">
             <p>Downloading a decade (87,600 bands) of snow cover data:
               <ul>
                 <li>5 min for the orange area</li>
@@ -312,7 +314,7 @@ ul {
               </ul>
 
            </div>
-           <div class="col">
+           <div class="right">
              
             <img src="images/03-ecmwf.png">
            </div>
@@ -322,13 +324,13 @@ ul {
        <section style="text-align: left;">
         <h2>Why does this matter?</h2>
         <div class="container">
-          <div class="col" style="text-align: left;">
+          <div class="left" style="text-align: left;">
             <p>Processing times will increase as well:
               <ul>
                 <li>Any manipulation or analysis of the orange area will be much faster than the red area</li>
               </ul>
            </div>
-           <div class="col">
+           <div class="right">
             <img src="images/03-ecmwf.png">
            </div>
          </section>
