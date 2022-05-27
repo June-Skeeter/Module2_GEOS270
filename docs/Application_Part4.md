@@ -192,7 +192,7 @@ Summarizing by a field (eg. DAUID - the Dissemination Unit ID) allows us to get 
 
 ## Join the Summary Table
 
-**9**{: .label .label-blue } Do a **Join** to add the Summary Table output to Van_DA_2016.  Following the same steps as above but use the Summary Table you just generated as the Join Table.  Now, Van_DA_2016 has "greenness" quantified by two different methods.  Method 1) gives us the average NDVI value per DA.  Method 2) gives us the total "green vegetation" area per DA.
+**9**{: .label .label-blue } Do a **Join** to add the Summary Table output to Van_DA_2016.  Following the same steps as above but use the Summary Table you just generated as the Join Table (likely named Van_DA_2016_Intersect_Statis). Use Van_DA_2016_DAUID as the Join Table Field. Now, Van_DA_2016 has "greenness" quantified by two different methods.  Method 1) gives us the average NDVI value per DA.  Method 2) gives us the total "green vegetation" area per DA.
 
 
 
