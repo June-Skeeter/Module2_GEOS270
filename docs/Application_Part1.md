@@ -73,6 +73,7 @@ Follow the steps below to setup your geodatabase.  You can reference the video t
 
 * Right click on your newly created **CensusData** feature dataset >> Import Feature Class(es) 
 * Add the two census data layers you downloaded: **Van_DA_2016.shp** and **VanCMS_CT_2016.shp** 
+* Drag and drop the **Van_DA_2016** from within the **CensusData** geodatabase to your map
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
